@@ -1,0 +1,1 @@
+src/pq-invert_modp.o: src/invert_modp.c

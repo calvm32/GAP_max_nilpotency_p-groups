@@ -1,0 +1,4 @@
+[31msrc/down_class.c:36:38: warning: comparison of integers of different signs: 'unsigned int' and 'int' [-Wsign-compare][0m
+[31m36 |    while (FIELD2(y[p2 + count1 + 1]) > lastg) {[0m
+[31m|           ~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~[0m
+[31m1 warning generated.[0m

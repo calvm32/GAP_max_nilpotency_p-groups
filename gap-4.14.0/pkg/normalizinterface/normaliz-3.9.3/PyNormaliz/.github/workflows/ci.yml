@@ -1,0 +1,110 @@
+name: Run tests
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  our-installation:
+    runs-on: ubuntu-latest
+    env:
+      EANTIC: yes
+      NAUTY: yes
+      COCOALIB: yes
+    steps:
+      - uses: actions/checkout@v2
+      - name: "Install prerequisites and Normaliz"
+        run: |
+          # sudo apt-get install libgmp-dev libpython3-dev python3-setuptools
+          # (packages already installed in GitHub's Ubuntu)
+          ./.ci-install-normaliz.sh
+      - name: "Install PyNormaliz"
+        run: |
+          ./.ci-install-pynormaliz.sh
+      - name: "Run tests"
+        run: |
+          ./.ci-run-tests.sh
+
+  no-eantic:
+    runs-on: ubuntu-latest
+    env:
+      EANTIC: no
+      NAUTY: yes
+      COCOALIB: yes
+    steps:
+      - uses: actions/checkout@v2
+      - name: "Install prerequisites and Normaliz"
+        run: |
+          # sudo apt-get install libgmp-dev libpython3-dev python3-setuptools
+          # (packages already installed in GitHub's Ubuntu)
+          ./.ci-install-normaliz.sh
+      - name: "Install PyNormaliz"
+        run: |
+          ./.ci-install-pynormaliz.sh
+      - name: "Run tests"
+        run: |
+          ./.ci-run-tests.sh
+
+  mac-os:
+    runs-on: macos-latest
+    env:
+      EANTIC: yes
+      NAUTY: yes
+      COCOALIB: yes
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+      - name: "Setup compiler and build automake"
+        run: |
+          brew reinstall llvm automake
+      - name: "Install Python prerequisites"
+        run: |
+          pip3 install coverage
+          pip3 install setuptools
+      - name: "Install Normaliz"
+        run: |
+          ./.ci-install-normaliz.sh
+      - name: "Install PyNormaliz"
+        run: |
+          ./.ci-install-pynormaliz.sh
+      - name: "Run tests"
+        run: |
+          ./.ci-run-tests.sh
+
+#  eantic-nauty:
+#    runs-on: ubuntu-latest
+#    env:
+#      EANTIC: yes
+#      NAUTY: yes
+#      COCOALIB: no
+#    steps:
+#
+#     - uses: actions/checkout@v2
+#      - name: "Install prerequisites and Normaliz"
+#        run: |
+#          sudo apt-get install libgmp-dev libflint-dev
+#          export PIP=$(which pip) # workaround so that sudo uses correct pip
+#          pip install coverage
+#          pip3 install coverage
+#          pip install setuptools
+#          pip3 install setuptools
+#          ./.ci-install-normaliz.sh
+#      - name: "Install PyNormaliz"
+#        run: |
+#          export CFLAGS="$CFLAGS --coverage"
+#          export PYTHONPATH="$PWD"
+#          export NMZ_PREFIX=${PWD}/local
+#          export NORMALIZ_LOCAL_DIR=${NMZ_PREFIX}
+#          python setup.py build_ext --inplace
+#      - name: "Run tests"
+#        run: |
+#          export OMP_NUM_THREADS=4
+#          # coverage run tests/runtests.py
+#          python tests/runtests.py
+#          #sudo $PIP install --no-index --no-deps -v dist/PyNormaliz-*.tar.gz
+#          sudo $PIP install --no-deps -v dist/PyNormaliz-*.tar.gz
+#          python -c "import PyNormaliz"
+#      - name: "Upload coverage data to Codecov"
+#        uses: codecov/codecov-action@v1

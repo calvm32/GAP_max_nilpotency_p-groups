@@ -1,0 +1,105 @@
+
+Sun Jun 22 12:38:20 EDT 2025
+
+[32m==== Checking io[0m
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+checking for GAP architecture... aarch64-apple-darwin24-default64-kv9
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dirent.h... yes
+checking for fcntl.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for netinet/tcp.h... yes
+checking for signal.h... yes
+checking for sys/param.h... yes
+checking for sys/socket.h... yes
+checking for sys/time.h... yes
+checking for sys/wait.h... yes
+checking for time.h... yes
+checking for vfork.h... no
+checking for pid_t... yes
+checking for fork... yes
+checking for vfork... yes
+checking for accept... yes
+checking for bind... yes
+checking for chmod... yes
+checking for chown... yes
+checking for closedir... yes
+checking for connect... yes
+checking for dup... yes
+checking for dup2... yes
+checking for fchmod... yes
+checking for fchown... yes
+checking for fstat... yes
+checking for gethostbyname... yes
+checking for gethostname... yes
+checking for getpid... yes
+checking for getppid... yes
+checking for getprotobyname... yes
+checking for getsockname... yes
+checking for getsockopt... yes
+checking for gettimeofday... yes
+checking for gmtime... yes
+checking for kill... yes
+checking for lchown... yes
+checking for link... yes
+checking for listen... yes
+checking for localtime... yes
+checking for lstat... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mkdtemp... yes
+checking for mkfifo... yes
+checking for mknod... yes
+checking for mkstemp... yes
+checking for opendir... yes
+checking for readdir... yes
+checking for readlink... yes
+checking for recv... yes
+checking for recvfrom... yes
+checking for rename... yes
+checking for rewinddir... yes
+checking for rmdir... yes
+checking for seekdir... yes
+checking for select... yes
+checking for send... yes
+checking for sendto... yes
+checking for setsockopt... yes
+checking for sigaction... yes
+checking for signal... yes
+checking for socket... yes
+checking for stat... yes
+checking for symlink... yes
+checking for telldir... yes
+checking for unlink... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating gen/pkgconfig.h
+[32mRunning 'gmake' 'clean' [0m
+rm -rf bin/aarch64-apple-darwin24-default64-kv9 gen
+[32mRunning 'gmake' [0m
+./config.status gen/pkgconfig.h
+config.status: creating gen/pkgconfig.h
+echo > gen/pkgconfig.h.stamp
+   GAC     src/io.c => gen/src/io.o
+   GAC     gen/src/io.o => bin/aarch64-apple-darwin24-default64-kv9/io.so

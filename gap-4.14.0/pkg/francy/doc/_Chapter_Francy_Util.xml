@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is an automatically generated file. -->
+<Chapter Label="Chapter_Francy_Util">
+<Heading>Francy Util</Heading>
+
+<P/>
+ Utility functions used across the package.
+<Section Label="Chapter_Francy_Util_Section_Operations">
+<Heading>Operations</Heading>
+
+ In this section we show all Francy Util Operations.
+ Contains utility methods to handle Object printing/viewing, Sanitizing, etc.
+<ManSection>
+  <Oper Arg="arg" Name="JUPYTER_ViewString" Label="for IsObject"/>
+ <Returns><C>String</C>
+</Returns>
+ <Description>
+ This method will pretty print in jupyter environment.
+ </Description>
+</ManSection>
+
+
+<ManSection>
+  <Oper Arg="IsObject" Name="Sanitize" Label="for IsObject"/>
+ <Returns><C>rec</C>
+</Returns>
+ <Description>
+ This method will clone an <C>Object</C> and return a sanitized record. It traverses all the
+ components sanitizing when appropriate.
+ Sanitizing in this context means: replace everything that can't be converted into JSON, with its string representation!
+ </Description>
+</ManSection>
+
+
+<ManSection>
+  <Oper Arg="IsFrancyObject, IsFrancyObject" Name="MergeObjects" Label="for IsFrancyObject, IsFrancyObject"/>
+ <Returns><C>rec</C>
+</Returns>
+ <Description>
+ This method will merge the properties of 2 <C>IsFrancyObjects</C> into one <C>rec</C>.
+ </Description>
+</ManSection>
+
+
+<ManSection>
+  <Oper Arg="" Name="GenerateID" />
+ <Returns><C>IsString</C>
+</Returns>
+ <Description>
+ This method will generate a sequential ID to be used as object identifier.
+ These IDs are used to identify the objects between the client and the server, and are crucial for the communication between both.
+ </Description>
+</ManSection>
+
+
+</Section>
+
+
+</Chapter>
+

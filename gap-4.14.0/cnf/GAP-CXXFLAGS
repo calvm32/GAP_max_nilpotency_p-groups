@@ -1,0 +1,1 @@
+ -pthread -g -O2 -fno-common

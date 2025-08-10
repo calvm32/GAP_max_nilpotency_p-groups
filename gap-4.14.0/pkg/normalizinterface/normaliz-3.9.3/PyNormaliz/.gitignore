@@ -1,0 +1,8 @@
+build
+*cpython*
+PyNormaliz.so
+dist
+MANIFEST
+*.pyc
+*~
+PyNormaliz.egg-info/*

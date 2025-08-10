@@ -1,0 +1,25 @@
+
+Sun Jun 22 12:37:41 EDT 2025
+
+[32m==== Checking ferret[0m
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+checking for GAP architecture... aarch64-apple-darwin24-default64-kv9
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating ferret.vars
+[32mRunning 'gmake' 'clean' [0m
+rm -rf bin/aarch64-apple-darwin24-default64-kv9 gen
+[32mRunning 'gmake' [0m
+   GAC     src/cppmapper.cc => gen/src/cppmapper.o
+   GAC     src/ferret.cc => gen/src/ferret.o
+   GAC     gen/src/cppmapper.o => bin/aarch64-apple-darwin24-default64-kv9/ferret.so

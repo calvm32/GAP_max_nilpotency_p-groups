@@ -1,0 +1,46 @@
+
+Sun Jun 22 12:37:41 EDT 2025
+
+[32m==== Checking ferret[0m
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+checking for GAP architecture... aarch64-apple-darwin24-default64-kv9
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating ferret.vars
+[32mRunning 'gmake' 'clean' [0m
+rm -rf bin/aarch64-apple-darwin24-default64-kv9 gen
+[32mRunning 'gmake' [0m
+   GAC     src/cppmapper.cc => gen/src/cppmapper.o
+[31mIn file included from src/cppmapper.cc:13:[0m
+[31mIn file included from YAPB++/source/problem.hpp:5:[0m
+[31mIn file included from YAPB++/source/constraint_store.hpp:5:[0m
+[31mIn file included from YAPB++/source/queue/rbase_generating_queue.hpp:8:[0m
+[31mIn file included from YAPB++/source/queue/../rbase/rbase.hpp:7:[0m
+[31mIn file included from YAPB++/source/partition_stack.hpp:11:[0m
+[31mYAPB++/source/library/algorithms.hpp:33:9: warning: variable 'covered' set but not used [-Wunused-but-set-variable][0m
+[31m33 |     int covered = 1;[0m
+[31m|         ^[0m
+[31mYAPB++/source/library/algorithms.hpp:90:9: warning: variable 'covered' set but not used [-Wunused-but-set-variable][0m
+[31m90 |     int covered = 1;[0m
+[31m|         ^[0m
+[31mIn file included from src/cppmapper.cc:14:[0m
+[31mIn file included from YAPB++/source/solution_store.hpp:8:[0m
+[31mYAPB++/source/partition_refinement.hpp:43:9: warning: variable 'cellsplits' set but not used [-Wunused-but-set-variable][0m
+[31m43 |     int cellsplits = 0;[0m
+[31m|         ^[0m
+[31mYAPB++/source/partition_refinement.hpp:106:6: warning: variable 'len' set but not used [-Wunused-but-set-variable][0m
+[31m106 |         int len = 0;[0m
+[31m|             ^[0m
+[31m4 warnings generated.[0m
+   GAC     src/ferret.cc => gen/src/ferret.o
+   GAC     gen/src/cppmapper.o => bin/aarch64-apple-darwin24-default64-kv9/ferret.so

@@ -1,0 +1,2 @@
+src/pq-expand_commutator.o: src/expand_commutator.c include/constants.h
+include/constants.h:

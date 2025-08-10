@@ -1,0 +1,16 @@
+[31mconfigure: WARNING: flag -mavx not supported, HPCombi is disabled[0m
+[31mconfigure: WARNING: flag -mavx not supported, HPCombi is disabled[0m
+[31mIn file included from src/stephen.cpp:22:[0m
+[31mIn file included from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/include/libsemigroups/stephen.hpp:36:[0m
+[31mIn file included from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/include/libsemigroups/todd-coxeter-digraph.hpp:135:[0m
+[31m/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/include/libsemigroups/todd-coxeter-digraph.tpp:132:14: warning: variable 'm' set but not used [-Wunused-but-set-variable][0m
+[31m132 |       size_t m = 0;[0m
+[31m|              ^[0m
+[31m1 warning generated.[0m
+[31mIn file included from src/pkg.cpp:59:[0m
+[31mIn file included from ./bin/include/libsemigroups/sims1.hpp:1269:[0m
+[31m./bin/include/libsemigroups/sims1.tpp:622:39: error: no member named 'long_rules' in 'libsemigroups::Sims1::iterator_base'[0m
+[31m622 |     _longs           = std::move(that.long_rules());[0m
+[31m|                                  ~~~~ ^[0m
+[31m1 error generated.[0m
+[31mgmake: *** [Makefile.gappkg:130: gen/src/pkg.o] Error 1[0m

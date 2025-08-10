@@ -1,0 +1,35 @@
+
+Sun Jun 22 12:37:25 EDT 2025
+
+[32m==== Checking curlinterface[0m
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+checking for GAP architecture... aarch64-apple-darwin24-default64-kv9
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking for curl-config... /usr/bin/curl-config
+checking for the version of libcurl... 8.7.1
+checking whether libcurl is usable... yes
+checking for curl_free... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating gen/pkgconfig.h
+[32mRunning 'gmake' 'clean' [0m
+rm -rf bin/aarch64-apple-darwin24-default64-kv9 gen
+[32mRunning 'gmake' [0m
+./config.status gen/pkgconfig.h
+config.status: creating gen/pkgconfig.h
+echo > gen/pkgconfig.h.stamp
+   GAC     src/curl.c => gen/src/curl.o
+   GAC     gen/src/curl.o => bin/aarch64-apple-darwin24-default64-kv9/curl.so

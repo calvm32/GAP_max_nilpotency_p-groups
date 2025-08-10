@@ -1,0 +1,414 @@
+
+Sun Jun 22 12:36:47 EDT 2025
+
+[32m==== Checking caratinterface[0m
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+[32mRunning 'gmake' 'clean' [0m
+if [ -d "carat/" ]; then cd carat; make clean; fi
+rm -rf "bin/aarch64-apple-darwin24-default64-kv9"
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+[32mRunning 'gmake' [0m
+if [ ! -d carat ]; then \
+  if [ -f carat.tgz ]; then tar pzxf carat.tgz; \
+  else git clone https://github.com/lbfm-rwth/carat.git; fi; \
+fi
+if [ ! -f carat/configure ]; then (cd carat && ./autogen.sh); fi
+touch carat/configure
+cd carat/tables; tar pzxf qcatalog.tar.gz --exclude=qcatalog/dim6
+touch carat/tables/qcatalog/TGROUPS.GAP
+(cd carat && ./configure --with-gmp=/opt/homebrew CC="gcc " CFLAGS="-pthread -g -O2  " && make)
+checking build system type... aarch64-apple-darwin24.5.0
+checking host system type... aarch64-apple-darwin24.5.0
+checking for gcc... gcc 
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc  accepts -g... yes
+checking for gcc  option to enable C11 features... none needed
+checking whether gcc  understands -c and -o together... yes
+checking for ranlib... ranlib
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... ./cnf/install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of gcc ... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for gmp.h... yes
+checking for __gmpz_init in -lgmp... yes
+checking for strlcpy... yes
+checking for strlcat... yes
+checking for library containing floor... none required
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/config.h
+config.status: executing depfiles commands
+  CC       src/add.o
+  CC       functions/utils.o
+  CC       functions/Autgrp/autgrp.o
+  CC       functions/Autgrp/auttools.o
+  CC       functions/Autgrp/bachtools.o
+  CC       functions/Autgrp/iotools.o
+  CC       functions/Autgrp/isometry.o
+  CC       functions/Autgrp/isotools.o
+  CC       functions/Autgrp/lattools.o
+  CC       functions/Autgrp/mattools.o
+  CC       functions/Autgrp/orbtools.o
+  CC       functions/Autgrp/perfecttools.o
+  CC       functions/Autgrp/pr_aut.o
+  CC       functions/Autgrp/pr_isom.o
+  CC       functions/Autgrp/preproc.o
+  CC       functions/Autgrp/sorttools.o
+  CC       functions/Base/base.o
+  CC       functions/Base/base2.o
+  CC       functions/Base/conjugate.o
+  CC       functions/Bravais/bravais_tools.o
+  CC       functions/Bravais/formspace.o
+  CC       functions/Bravais/init_bravais.o
+  CC       functions/Bravais/invar_space.o
+  CC       functions/Bravais/konj_bravais.o
+  CC       functions/Bravais/lincomb.o
+  CC       functions/Bravais/normalisator.o
+  CC       functions/Bravais/normlin.o
+  CC       functions/Bravais/p_formspace.o
+  CC       functions/Bravais/rform.o
+  CC       functions/Bravais/tr_bravais.o
+  CC       functions/Bravais/trace_bifo.o
+  CC       functions/Contrib/suche_kand.o
+  CC       functions/Contrib/torsionfree.o
+  CC       functions/Datei/brav_from_datei.o
+  CC       functions/Datei/free_bravais.o
+  CC       functions/Datei/get_data_dir.o
+  CC       functions/Datei/get_symbol.o
+  CC       functions/Datei/get_zentr.o
+  CC       functions/Datei/gittstab.o
+  CC       functions/Datei/gittstabneu.o
+  CC       functions/Datei/lattice_tools.o
+  CC       functions/Datei/lattice.o
+  CC       functions/Datei/read_symbol.o
+  CC       functions/Datei/right_order.o
+  CC       functions/Datei/super_lattice.o
+  CC       functions/Getput/get_bravais.o
+  CC       functions/Getput/get_mat.o
+  CC       functions/Getput/put_bravais.o
+  CC       functions/Getput/put_mat.o
+  CC       functions/Getput/put_order.o
+  CC       functions/Getput/read_header.o
+  CC       functions/Graph/aff_normal.o
+  CC       functions/Graph/calculate_representatives.o
+  CC       functions/Graph/coho_size.o
+  CC       functions/Graph/graph_mapped_word.o
+  CC       functions/Graph/graph_tools.o
+  CC       functions/Graph/is_k_subgroup.o
+  CC       functions/Graph/lattices.o
+  CC       functions/Graph/normalop_o.o
+  CC       functions/Graph/obergruppenzahl.o
+  CC       functions/Graph/orbit_fkts.o
+  CC       functions/Graph/phi.o
+  CC       functions/Graph/Q_data.o
+  CC       functions/Graph/stabs.o
+  CC       functions/Graph/sub-k-groups-fcts.o
+  CC       functions/Graph/sub-super-tools.o
+  CC       functions/Graph/subgroupgraph.o
+  CC       functions/Graph/super-k-groups-fcts.o
+  CC       functions/Hyperbolic/hyp_isom.o
+  CC       functions/Hyperbolic/hyp_stabilizer.o
+  CC       functions/Idem/almost_decomposable_lattice.o
+  CC       functions/Idem/bravais_catalog.o
+  CC       functions/Idem/centr.o
+  CC       functions/Idem/min_pol.o
+  CC       functions/Idem/symbol.o
+  CC       functions/Idem/v4_catalog.o
+  CC       functions/Idem/z_equivalent.o
+  CC       functions/Longtools/dump_MP_mat.o
+  CC       functions/Longtools/long_elt.o
+  CC       functions/Longtools/long_gauss.o
+  CC       functions/Longtools/long_hnf.o
+  CC       functions/Longtools/long_kernel_mat.o
+  CC       functions/Longtools/long_mat_inv.o
+  CC       functions/Longtools/long_qbase.o
+  CC       functions/Longtools/long_rein_mat.o
+  CC       functions/Longtools/long_solve_mat.o
+  CC       functions/Longtools/MP_conv_mat.o
+  CC       functions/Longtools/MP_gauss.o
+  CC       functions/Longtools/MP_hnf.o
+  CC       functions/Longtools/MP_pair_red.o
+  CC       functions/Longtools/MP_red_sort.o
+  CC       functions/Longtools/MP_solve.o
+  CC       functions/Matrix/add_mat.o
+  CC       functions/Matrix/col_row_ops_mat.o
+  CC       functions/Matrix/comp_mat.o
+  CC       functions/Matrix/construct_mat.o
+  CC       functions/Matrix/divide_by_gcd.o
+  CC       functions/Matrix/elt_div_mat.o
+  CC       functions/Matrix/find_max_entry_mat.o
+  CC       functions/Matrix/gauss_mat.o
+  CC       functions/Matrix/inv_mat.o
+  CC       functions/Matrix/kgv2rat_mat.o
+  CC       functions/Matrix/kron_mat.o
+  CC       functions/Matrix/modp_mat.o
+  CC       functions/Matrix/mul_mat.o
+  CC       functions/Matrix/null_mat.o
+  CC       functions/Matrix/p_gauss_mat.o
+  CC       functions/Matrix/p_lse_solve.o
+  CC       functions/Matrix/p_mat_det.o
+  CC       functions/Matrix/p_solve_mat.o
+  CC       functions/Matrix/real_mat.o
+  CC       functions/Matrix/red_mat.o
+  CC       functions/Matrix/scal_pr_mat.o
+  CC       functions/Matrix/solve_mat.o
+  CC       functions/Matrix/tools_mat.o
+  CC       functions/Matrix/tr_pose_mat.o
+  CC       functions/Matrix/trace_mat.o
+  CC       functions/Matrix/unity_mat.o
+  CC       functions/Name/aff_class_inf.o
+  CC       functions/Name/compute_q_matrix.o
+  CC       functions/Name/HM_symbol.o
+  CC       functions/Name/point_group.o
+  CC       functions/Name/Q_catalog.o
+  CC       functions/Name/q_class_inf.o
+  CC       functions/Name/reverse_name_fct.o
+  CC       functions/Name/z_class_inf.o
+  CC       functions/Orbit/orb_division.o
+  CC       functions/Orbit/orbit_alg.o
+  CC       functions/Orbit/orbit_subdivision.o
+  CC       functions/Orbit/row_spin.o
+  CC       functions/Polyeder/first_fuber.o
+  CC       functions/Polyeder/first_polyeder.o
+  CC       functions/Polyeder/fuber_tools.o
+  CC       functions/Polyeder/polyeder_to_vecs.o
+  CC       functions/Polyeder/polyeder_tools.o
+  CC       functions/Polyeder/refine_fuber.o
+  CC       functions/Polyeder/refine_polyeder.o
+  CC       functions/Presentation/check_base.o
+  CC       functions/Presentation/mapped_word.o
+  CC       functions/Presentation/presentation.o
+  CC       functions/Presentation/put_word.o
+  CC       functions/Reduction/mink_red.o
+  CC       functions/Reduction/pair_red.o
+  CC       functions/Reduction/reduction_sort.o
+  CC       functions/Reduction/short_reduce.o
+  CC       functions/Sort/compare.o
+  CC       functions/Sort/quicksort.o
+  CC       functions/Sort/search.o
+  CC       functions/Symm/dsylv.o
+  CC       functions/Symm/rest_short.o
+  CC       functions/Symm/short.o
+  CC       functions/Symm/shortest.o
+  CC       functions/Tools/chin_remainder.o
+  CC       functions/Tools/intpow.o
+  CC       functions/Tools/itoa.o
+  CC       functions/Tools/malloc2dim.o
+  CC       functions/Tools/min_div.o
+  CC       functions/Tools/ovfl_mul.o
+  CC       functions/Tools/prime_tools.o
+  CC       functions/Tools/random.o
+  CC       functions/Tools/tools.o
+  CC       functions/TSubgroups/name_fct.o
+  CC       functions/TSubgroups/PoaN.o
+  CC       functions/TSubgroups/tsubgroups_fct_db.o
+  CC       functions/TSubgroups/tsubgroups_fct.o
+  CC       functions/TSubgroups/tsubgroups_tools.o
+  CC       functions/TSubgroups/tSUPERgroups_fct_db.o
+  CC       functions/Voronoi/all_vor_neighbours.o
+  CC       functions/Voronoi/bravais_flok_datei.o
+  CC       functions/Voronoi/bravais_flok.o
+  CC       functions/Voronoi/calc_vor_data.o
+  CC       functions/Voronoi/first_perfect.o
+  CC       functions/Voronoi/init_voronoi.o
+  CC       functions/Voronoi/normalizer.o
+  CC       functions/Voronoi/pair_red_inv.o
+  CC       functions/Voronoi/red_normal.o
+  CC       functions/Voronoi/vor_neighbour.o
+  CC       functions/Voronoi/vor_vertices.o
+  CC       functions/Zassen/coboundary.o
+  CC       functions/Zassen/cong_solve.o
+  CC       functions/Zassen/convert_cocycle_to_column.o
+  CC       functions/Zassen/convert_to_cocycle.o
+  CC       functions/Zassen/normalop.o
+  CC       functions/Zassen/put_cocycle.o
+  CC       functions/Zassen/reget_gen.o
+  CC       functions/Zassen/reverse_valuation.o
+  CC       functions/Zassen/zass.o
+  CC       functions/ZZ/get_groups.o
+  CC       functions/ZZ/q2z.o
+  CC       functions/ZZ/ZZ_cen_fun.o
+  CC       functions/ZZ/ZZ_gen_vs.o
+  CC       functions/ZZ/ZZ_irr_const.o
+  CC       functions/ZZ/ZZ_lll.o
+  CC       functions/ZZ/ZZ_zclass.o
+  CC       functions/ZZ/ZZ.o
+  AR       libfunctions.a
+  CCLD     bin/Add
+  CC       src/autgrp.o
+  CCLD     bin/Aut_grp
+  CC       src/bravais_equiv.o
+  CCLD     bin/Bravais_equiv
+  CC       src/bravaisgroup.o
+  CCLD     bin/Bravais_grp
+  CC       src/bravais_inclusions.o
+  CCLD     bin/Bravais_inclusions
+  CC       src/conj.o
+  CCLD     bin/Conj
+  CC       src/conj_bravais.o
+  CCLD     bin/Conj_bravais
+  CC       src/conjugated.o
+  CCLD     bin/Conjugated
+  CC       src/conv.o
+  CCLD     bin/Conv
+  CC       src/datei.o
+  CCLD     bin/Datei
+  CC       src/elt.o
+  CCLD     bin/Elt
+  CC       src/extensions.o
+  CCLD     bin/Extensions
+  CC       src/extract.o
+  CCLD     bin/Extract
+  CC       src/first_perfect.o
+  CCLD     bin/First_perfect
+  CC       src/form_elt.o
+  CCLD     bin/Form_elt
+  CC       src/form_space.o
+  CCLD     bin/Form_space
+  CC       src/formtovec.o
+  CCLD     bin/Formtovec
+  CC       src/full.o
+  CCLD     bin/Full
+  CC       src/gauss.o
+  CCLD     bin/Gauss
+  CC       src/graph.o
+  CCLD     bin/Graph
+  CC       src/idem.o
+  CCLD     bin/Idem
+  CC       src/inv.o
+  CCLD     bin/Inv
+  CC       src/invar_space.o
+  CCLD     bin/Invar_space
+  CC       src/is_finite.o
+  CCLD     bin/Is_finite
+  CC       src/isometry.o
+  CCLD     bin/Isometry
+  CC       src/kron.o
+  CCLD     bin/Kron
+  CC       src/sub-k-groups.o
+  CCLD     bin/KSubgroups
+  CC       src/super-k-groups.o
+  CCLD     bin/KSupergroups
+  CC       src/long_solve.o
+  CCLD     bin/Long_solve
+  CC       src/ltm.o
+  CCLD     bin/Ltm
+  CC       src/mink_red.o
+  CCLD     bin/Mink_red
+  CC       src/minpol.o
+  CCLD     bin/Minpol
+  CC       src/modp.o
+  CCLD     bin/Modp
+  CC       src/mtl.o
+  CCLD     bin/Mtl
+  CC       src/mul.o
+  CCLD     bin/Mul
+  CC       src/name.o
+  CCLD     bin/Name
+  CC       src/normalizer.o
+  CCLD     bin/Normalizer
+  CC       src/normalizer_in_n.o
+  CCLD     bin/Normalizer_in_N
+  CC       src/normlin.o
+  CCLD     bin/Normlin
+  CC       src/orbit.o
+  CCLD     bin/Orbit
+  CC       src/order.o
+  CCLD     bin/Order
+  CC       src/p_lse_solve.o
+  CCLD     bin/P_lse_solve
+  CC       src/pair_red.o
+  CCLD     bin/Pair_red
+  CC       src/pdet.o
+  CCLD     bin/Pdet
+  CC       src/perfect_neighbours.o
+  CCLD     bin/Perfect_neighbours
+  CC       src/polyeder.o
+  CCLD     bin/Polyeder
+  CC       src/presentation.o
+  CCLD     bin/Presentation
+  CC       src/Q_catalog.o
+  CCLD     bin/Q_catalog
+  CC       src/qtoz.o
+  CCLD     bin/QtoZ
+  CC       src/red_gen.o
+  CCLD     bin/Red_gen
+  CC       src/rein.o
+  CCLD     bin/Rein
+  CC       src/rest_short.o
+  CCLD     bin/Rest_short
+  CC       src/reverse_name.o
+  CCLD     bin/Reverse_name
+  CC       src/rform.o
+  CCLD     bin/Rform
+  CC       src/same_generators.o
+  CCLD     bin/Same_generators
+  CC       src/scalarmul.o
+  CCLD     bin/Scalarmul
+  CC       src/scpr.o
+  CCLD     bin/Scpr
+  CC       src/short.o
+  CCLD     bin/Short
+  CC       src/short_reduce.o
+  CCLD     bin/Short_reduce
+  CC       src/shortest.o
+  CCLD     bin/Shortest
+  CC       src/signature.o
+  CCLD     bin/Signature
+  CC       src/simplify_mat.o
+  CCLD     bin/Simplify_mat
+  CC       src/symbol.o
+  CCLD     bin/Symbol
+  CC       src/torsionfree.o
+  CCLD     bin/Torsionfree
+  CC       src/tr.o
+  CCLD     bin/Tr
+  CC       src/tr_bravais.o
+  CCLD     bin/Tr_bravais
+  CC       src/trace.o
+  CCLD     bin/Trace
+  CC       src/trbifo.o
+  CCLD     bin/Trbifo
+  CC       src/tsubgroups.o
+  CCLD     bin/TSubgroups
+  CC       src/tsupergroups.o
+  CCLD     bin/TSupergroups
+  CC       src/vectoform.o
+  CCLD     bin/Vectoform
+  CC       src/vor_vertices.o
+  CCLD     bin/Vor_vertices
+  CC       src/z_equiv.o
+  CCLD     bin/Z_equiv
+  CC       src/zass_main.o
+  CCLD     bin/Zass_main
+  CC       src/ZZprog.o
+  CCLD     bin/ZZprog
+chmod -R a+rX .
+mkdir -p bin
+rm -rf "bin/aarch64-apple-darwin24-default64-kv9"
+ln -sf ../carat/bin "bin/aarch64-apple-darwin24-default64-kv9"

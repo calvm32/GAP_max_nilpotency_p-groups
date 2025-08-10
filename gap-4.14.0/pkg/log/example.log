@@ -1,0 +1,13 @@
+
+Sun Jun 22 12:37:40 EDT 2025
+
+[32m==== Checking example[0m
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning 'gmake' 'clean' [0m
+rm -rf bin
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning 'gmake' [0m
+mkdir -p bin/aarch64-apple-darwin24-default64-kv9
+cc -o bin/aarch64-apple-darwin24-default64-kv9/hello src/hello.c  

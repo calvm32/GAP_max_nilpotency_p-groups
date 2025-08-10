@@ -1,0 +1,12 @@
+
+Sun Jun 22 12:37:25 EDT 2025
+
+[32m==== Checking crypting[0m
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning 'gmake' 'clean' [0m
+rm -rf bin/aarch64-apple-darwin24-default64-kv9
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning 'gmake' [0m
+   GAC     src/crypting.c => bin/aarch64-apple-darwin24-default64-kv9/crypting.so

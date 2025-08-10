@@ -1,0 +1,159 @@
+
+Sun Jun 22 12:38:28 EDT 2025
+
+[32m==== Checking kbmag[0m
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning 'gmake' 'clean' [0m
+cd standalone/lib; gmake clean
+gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/lib'
+/bin/rm -f fsa.o fsaio.o hash.o rwsreduce.o miscio.o rwsio.o rwsiob.o worddiff.o worddcos.o kbfns.o fsalogic.o rabkar.o fsaipmin.o fsarevmid.o nfa.o midfa.o fsawa.o fsawacos.o fsatriples.o diffreduce.o fsamitriples.o diffredcos.o diffredwl.o fsacheckmult.o migmdet.o fsageopairs.o fsacomposite.o fsaminkb.o fsamicomp.o fsadifflabs.o fsasubmult.o fsalib.o fsalib.a fsalib.so
+gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/lib'
+cd standalone/src; gmake clean
+gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/src'
+/bin/rm -f *.o core a.out *\~
+gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/src'
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning 'gmake' [0m
+mkdir -p bin/aarch64-apple-darwin24-default64-kv9;
+cd standalone/lib; gmake CC="cc" CFLAGS="-O2 -g -Wall -Wno-char-subscripts" LDFLAGS=""
+gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/lib'
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsa.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsaio.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts hash.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts rwsreduce.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts miscio.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts rwsio.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts rwsiob.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts worddiff.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts worddcos.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts kbfns.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsalogic.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts rabkar.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsaipmin.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsarevmid.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts nfa.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts midfa.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsawa.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsawacos.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsatriples.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts diffreduce.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsamitriples.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts diffredcos.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts diffredwl.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsacheckmult.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts migmdet.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsageopairs.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsacomposite.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsaminkb.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsamicomp.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsadifflabs.c
+cc -c -fPIC -O2 -g -Wall -Wno-char-subscripts fsasubmult.c
+ar cr fsalib.a fsa.o fsaio.o hash.o rwsreduce.o miscio.o rwsio.o rwsiob.o worddiff.o worddcos.o kbfns.o fsalogic.o rabkar.o fsaipmin.o fsarevmid.o nfa.o midfa.o fsawa.o fsawacos.o fsatriples.o diffreduce.o fsamitriples.o diffredcos.o diffredwl.o fsacheckmult.o migmdet.o fsageopairs.o fsacomposite.o fsaminkb.o fsamicomp.o fsadifflabs.o fsasubmult.o
+if  which ranlib > /dev/null 2> /dev/null; then ranlib fsalib.a; fi
+gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/lib'
+cd standalone/src; gmake CC="cc" CFLAGS="-O2 -g -Wall -Wno-char-subscripts" LDFLAGS="" BIN="../../bin/aarch64-apple-darwin24-default64-kv9"
+gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/src'
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib kbprog.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/kbprog kbprog.o ../lib/fsalib.a
+cp autcos ../../bin/aarch64-apple-darwin24-default64-kv9/autcos
+chmod +x ../../bin/aarch64-apple-darwin24-default64-kv9/autcos
+cp autgroup ../../bin/aarch64-apple-darwin24-default64-kv9/autgroup
+chmod +x ../../bin/aarch64-apple-darwin24-default64-kv9/autgroup
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsaand.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsaand fsaand.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsaandnot.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsaandnot fsaandnot.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsabfs.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsabfs fsabfs.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsaconcat.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsaconcat fsaconcat.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsacount.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsacount fsacount.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsaenumerate.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsaenumerate fsaenumerate.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsaexists.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsaexists fsaexists.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsafilter.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsafilter fsafilter.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsagrowth.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsagrowth fsagrowth.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsalabmin.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsalabmin fsalabmin.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsalequal.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsalequal fsalequal.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsamin.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsamin fsamin.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsanot.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsanot fsanot.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsaor.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsaor fsaor.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsaprune.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsaprune fsaprune.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsareverse.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsareverse fsareverse.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsastar.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsastar fsastar.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsaswapcoords.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsaswapcoords fsaswapcoords.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpaxioms.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpaxioms gpaxioms.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpcheckmult.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpcheckmult gpcheckmult.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpchecksubwa.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpchecksubwa gpchecksubwa.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpcomp.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpcomp gpcomp.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpdifflabs.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpdifflabs gpdifflabs.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpgenmult.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpgenmult gpgenmult.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpgenmult2.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpgenmult2 gpgenmult2.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpgeowa.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpgeowa gpgeowa.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmakefsa.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmakefsa gpmakefsa.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmakesubwa.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmakesubwa gpmakesubwa.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmicomp.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmicomp gpmicomp.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmigenmult.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmigenmult gpmigenmult.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmigenmult2.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmigenmult2 gpmigenmult2.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmigmdet.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmigmdet gpmigmdet.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmimult.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmimult gpmimult.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmimult2.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmimult2 gpmimult2.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpminkb.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpminkb gpminkb.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmult.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmult gpmult.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmult2.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmult2 gpmult2.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpsubpres.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpsubpres gpsubpres.o ../lib/fsalib.a
+cp gpsubwa ../../bin/aarch64-apple-darwin24-default64-kv9/gpsubwa
+chmod +x ../../bin/aarch64-apple-darwin24-default64-kv9/gpsubwa
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpwa.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpwa gpwa.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib kbprogcos.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/kbprogcos kbprogcos.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib makecosfile.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/makecosfile makecosfile.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib midfadeterminize.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/midfadeterminize midfadeterminize.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib nfadeterminize.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/nfadeterminize nfadeterminize.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib ppgap.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/ppgap ppgap.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib ppgap4.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/ppgap4 ppgap4.o ../lib/fsalib.a
+cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib wordreduce.c
+cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/wordreduce wordreduce.o ../lib/fsalib.a
+rm gpmimult.o gpmigmdet.o fsaprune.o fsaandnot.o ppgap.o gpaxioms.o kbprogcos.o makecosfile.o gpcomp.o gpcheckmult.o fsabfs.o gpmicomp.o gpwa.o fsacount.o fsafilter.o fsalequal.o gpmult2.o gpmult.o wordreduce.o fsagrowth.o gpmigenmult2.o gpgenmult.o gpgenmult2.o gpmakesubwa.o nfadeterminize.o midfadeterminize.o gpmigenmult.o kbprog.o gpsubpres.o fsaconcat.o fsalabmin.o ppgap4.o fsaor.o gpgeowa.o fsaexists.o gpmakefsa.o fsaenumerate.o fsastar.o gpdifflabs.o gpchecksubwa.o fsanot.o gpmimult2.o fsaand.o fsamin.o fsareverse.o gpminkb.o fsaswapcoords.o
+gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/src'

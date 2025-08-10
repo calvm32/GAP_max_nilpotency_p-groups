@@ -1,0 +1,8 @@
+[31mIn file included from float.c:25:[0m
+[31m./floattypes.h:15:10: fatal error: 'gmp.h' file not found[0m
+[31m15 | #include <gmp.h>[0m
+[31m|          ^~~~~~~[0m
+[31m1 error generated.[0m
+[31mgmake[2]: *** [Makefile:623: float_la-float.lo] Error 1[0m
+[31mgmake[1]: *** [Makefile:444: all] Error 2[0m
+[31mgmake: *** [Makefile:440: all-recursive] Error 1[0m

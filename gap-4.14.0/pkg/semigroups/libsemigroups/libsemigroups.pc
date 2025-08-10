@@ -1,0 +1,11 @@
+prefix=${abs_top_builddir}/../bin
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${abs_top_builddir}/../bin/include
+
+Name: libsemigroups
+Description: C++ library for semigroups and monoids
+Version: 2.7.3
+Libs: -L${libdir} -lsemigroups
+Cflags: -I${includedir}
+Requires:  

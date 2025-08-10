@@ -1,0 +1,139 @@
+
+Sun Jun 22 12:38:11 EDT 2025
+
+[32m==== Checking guava[0m
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning 'gmake' 'clean' [0m
+rm -f bin/aarch64-apple-darwin24-default64-kv9/*.o
+( cd src && make clean )
+rm -f leonconv
+rm -f *.o
+( cd ./src/ctjhai && rm -f minimum-weight *.o)
+( cd ./src/leon && make clean )
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning 'gmake' [0m
+cc -O2   -c -o src/ctjhai/minimum-weight.o src/ctjhai/minimum-weight.c
+cc -O2   -c -o src/ctjhai/minimum-weight-gf2.o src/ctjhai/minimum-weight-gf2.c
+cc -O2   -c -o src/ctjhai/minimum-weight-gf3.o src/ctjhai/minimum-weight-gf3.c
+cc -O2   -c -o src/ctjhai/popcount.o src/ctjhai/popcount.c
+cc  -o ./src/ctjhai/minimum-weight \
+./src/ctjhai/minimum-weight.o ./src/ctjhai/minimum-weight-gf2.o \
+./src/ctjhai/minimum-weight-gf3.o ./src/ctjhai/popcount.o -lm
+cd ./src/leon; autoreconf --install --force ; ./configure; gmake CC="cc" CPPFLAGS="" CFLAGS="-O2" LDFLAGS="";
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking size of int... 4
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether make sets $(MAKE)... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/leon_config.h
+gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src/leon'
+cc  -O2 -c   ./src/setstab.c 
+cc  -O2 -c   ./src/addsgen.c 
+cc  -O2 -c   ./src/bitmanp.c 
+cc  -O2 -c   ./src/chbase.c 
+cc  -O2 -c   ./src/compcrep.c 
+cc  -O2 -c   ./src/compsg.c 
+cc  -O2 -c   ./src/copy.c 
+cc  -O2 -c   ./src/cparstab.c 
+cc  -O2 -c   ./src/csetstab.c 
+cc  -O2 -c   ./src/cstborb.c 
+cc  -O2 -c   ./src/cstrbas.c 
+cc  -O2 -c   ./src/cuprstab.c 
+cc  -O2 -c   ./src/errmesg.c 
+cc  -O2 -c   ./src/essentia.c 
+cc  -O2 -c   ./src/factor.c 
+cc  -O2 -c   ./src/inform.c 
+cc  -O2 -c   ./src/new.c 
+cc  -O2 -c   ./src/oldcopy.c 
+cc  -O2 -c   ./src/optsvec.c 
+cc  -O2 -c   ./src/orbit.c 
+cc  -O2 -c   ./src/orbrefn.c 
+cc  -O2 -c   ./src/partn.c 
+cc  -O2 -c   ./src/permgrp.c 
+cc  -O2 -c   ./src/permut.c 
+cc  -O2 -c   ./src/primes.c 
+cc  -O2 -c   ./src/ptstbref.c 
+cc  -O2 -c   ./src/randgrp.c 
+cc  -O2 -c   ./src/randschr.c 
+cc  -O2 -c   ./src/readgrp.c 
+cc  -O2 -c   ./src/readpar.c 
+cc  -O2 -c   ./src/readper.c 
+cc  -O2 -c   ./src/readpts.c 
+cc  -O2 -c   ./src/rprique.c 
+cc  -O2 -c   ./src/storage.c 
+cc  -O2 -c   ./src/token.c 
+cc  -O2 -c   ./src/util.c 
+cc -o setstab  -v setstab.o addsgen.o bitmanp.o chbase.o compcrep.o compsg.o copy.o cparstab.o csetstab.o cstborb.o cstrbas.o cuprstab.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o readpar.o readper.o readpts.o rprique.o storage.o token.o util.o  
+cc  -O2 -c   ./src/cent.c 
+cc  -O2 -c   ./src/ccent.c 
+cc -o cent  -v cent.o addsgen.o bitmanp.o ccent.o chbase.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o readper.o rprique.o storage.o token.o util.o  
+cc  -O2 -c   ./src/inter.c 
+cc  -O2 -c   ./src/cinter.c 
+cc -o inter  -v inter.o addsgen.o bitmanp.o chbase.o cinter.o compcrep.o compsg.o copy.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o rprique.o storage.o token.o util.o  
+cc  -O2 -c   ./src/desauto.c 
+cc  -O2 -c   ./src/cdesauto.c 
+cc  -O2 -c   ./src/cmatauto.c 
+cc  -O2 -c   ./src/code.c 
+cc  -O2 -c   ./src/field.c 
+cc  -O2 -c   ./src/matrix.c 
+cc  -O2 -c   ./src/readdes.c 
+cc -o desauto  -v desauto.o addsgen.o bitmanp.o cdesauto.o chbase.o cmatauto.o code.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o field.o inform.o matrix.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readdes.o readgrp.o readper.o rprique.o storage.o token.o util.o  
+cc  -O2 -c   ./src/generate.c 
+cc  -O2 -c   ./src/relator.c 
+cc  -O2 -c   ./src/stcs.c 
+cc -o generate  -v generate.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o relator.o stcs.o storage.o token.o util.o  
+cc  -O2 -c   ./src/commut.c 
+cc  -O2 -c   ./src/ccommut.c 
+cc -o commut  -v commut.o addsgen.o bitmanp.o chbase.o ccommut.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o storage.o token.o util.o 
+cc  -O2 -c   ./src/cjrndper.c 
+cc -o cjrndper  -v cjrndper.o addsgen.o bitmanp.o chbase.o code.o copy.o cstborb.o errmesg.o essentia.o factor.o field.o matrix.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readdes.o readgrp.o readpar.o readper.o readpts.o storage.o token.o util.o 
+cc  -O2 -c   ./src/orblist.c 
+cc -o orblist  -v orblist.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readpar.o readpts.o storage.o token.o util.o 
+cc  -O2 -c   ./src/fndelt.c 
+cc -o fndelt  -v fndelt.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readper.o storage.o token.o util.o 
+cc  -O2 -c   ./src/compgrp.c 
+cc -o compgrp  -v compgrp.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readpar.o readper.o readpts.o storage.o token.o util.o 
+cc  -O2 -c   ./src/orbdes.c 
+cc -o orbdes  -v orbdes.o addsgen.o bitmanp.o chbase.o code.o copy.o cstborb.o errmesg.o essentia.o factor.o field.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readdes.o readgrp.o readper.o storage.o token.o util.o 
+cc  -O2 -c   ./src/randobj.c 
+cc -o randobj  -v randobj.o bitmanp.o copy.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o readpar.o readpts.o storage.o token.o util.o  
+cc  -O2 -c   ./src/wtdist.c 
+cc -o wtdist  -v wtdist.o bitmanp.o code.o copy.o errmesg.o essentia.o factor.o field.o new.o partn.o permgrp.o permut.o primes.o readdes.o storage.o token.o util.o  
+gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src/leon'
+cd ./src; gmake CC="cc" CPPFLAGS="" CFLAGS="-O2" LDFLAGS="";
+gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src'
+cc  -O2  -o leonconv leonconv.c
+cd leon; gmake
+gmake[2]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src/leon'
+gmake[2]: Nothing to be done for 'all'.
+gmake[2]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src/leon'
+gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src'
+mkdir -p bin/aarch64-apple-darwin24-default64-kv9
+cp ./src/leonconv bin/aarch64-apple-darwin24-default64-kv9
+cp ./src/leon/desauto bin/aarch64-apple-darwin24-default64-kv9
+cp ./src/ctjhai/minimum-weight bin/aarch64-apple-darwin24-default64-kv9
+cp ./src/leon/wtdist bin/aarch64-apple-darwin24-default64-kv9
