@@ -13,21 +13,21 @@ Add(rels, Comm(s3,s1)*s4^-1);
 Add(rels, Comm(s4,s1)*s5^-1);
 Add(rels, Comm(s5,s1)*s6^-1);
 
-Add(rels, Comm(s2,s3)*s6^-1);
+Add(rels, Comm(s3,s4)*s6^-1);
+Add(rels, Comm(s4,s2)*s6^-1);
+Add(rels, Comm(s5,s2)*s6^-1);
 
-# trivial commutator relations: (should be [6 choose 2]-5 = 10)
+# trivial commutator relations: (should be [6 choose 2]-7 = 8)
 Add(rels, Comm(s6,s1));
 Add(rels, Comm(s6,s2));
 Add(rels, Comm(s6,s3));
 Add(rels, Comm(s6,s4));
 Add(rels, Comm(s6,s5));
 
-Add(rels, Comm(s5,s2));
 Add(rels, Comm(s5,s3));
 Add(rels, Comm(s5,s4));
 
-Add(rels, Comm(s4,s2));
-Add(rels, Comm(s4,s3));
+Add(rels, Comm(s3,s2));
 
 # order of s1 is p
 Add(rels, s1^p);

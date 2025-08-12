@@ -14,7 +14,7 @@ Add(rels, Comm(s4,s1)*s5^-1);
 
 Add(rels, Comm(s2,s3)*s5^-1);
 
-# trivial commutator relations: (should be [5 choose 2]-3 = 7)
+# trivial commutator relations: (should be [5 choose 2]-4 = 6)
 Add(rels, Comm(s5,s1));
 Add(rels, Comm(s5,s2));
 Add(rels, Comm(s5,s3));
