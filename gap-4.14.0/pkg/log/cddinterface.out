@@ -1,8 +1,8 @@
 
-Sun Jun 22 12:37:19 EDT 2025
+Mon Aug 11 13:01:01 MDT 2025
 
 [32m==== Checking cddinterface[0m
-[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
 checking for gcc... gcc
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out
@@ -12,7 +12,7 @@ checking for suffix of object files... o
 checking whether the compiler supports GNU C... yes
 checking whether gcc accepts -g... yes
 checking for gcc option to enable C11 features... none needed
-checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 checking for GAP architecture... aarch64-apple-darwin24-default64-kv9
 configure: BREW detected
 checking for stdio.h... yes

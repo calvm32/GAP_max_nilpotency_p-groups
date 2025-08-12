@@ -1,23 +1,26 @@
 
-Sun Jun 22 12:37:58 EDT 2025
+Mon Aug 11 13:01:39 MDT 2025
 
 [32m==== Checking grape[0m
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' 'clean' [0m
 make -C nauty2_8_6 clean
-[31mmake[1]: *** No rule to make target `clean'.  Stop.[0m
-[31mgmake: *** [Makefile:20: clean] Error 2[0m
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+rm -f nauty.o nautil.o nausparse.o naugraph.o schreier.o naurng.o nauty1.o nautil1.o nausparse.o naugraph1.o schreier.o naurng.o nautyS.o nautilS.o nausparseS.o naugraphS.o schreierS.o naurng.o nautyS1.o nautilS1.o nausparseS.o naugraphS1.o schreierS.o naurng.o nautyL.o nautilL.o nausparseL.o naugraphL.o schreierL.o naurng.o nautyL1.o nautilL1.o nausparseL.o naugraphL1.o schreierL.o naurng.o \
+              nautyW.o nautilW.o nausparseW.o naugraphW.o schreierW.o naurng.o nautyW1.o nautilW1.o nausparseW.o naugraphW1.o schreierW.o naurng.o naututil.o naututil1.o naututilS.o naututilS1.o naututilW.o naututilW1.o naututilL.o naututilL1.o gutil1.o gutil1W.o gutil1W1.o gutil1L.o gutil1L1.o gutil2.o gutil2W.o gutil2W1.o gutil2L.o gutil2L1.o dreadnaut.o nautycliquer.o nautycliquerW.o nautycliquerL.o traces.o gtools.o gtoolsW.o gtoolsL.o gtnauty.o gtnautyL.o gtnautyL1.o gtnautyW.o gtnautyW1.o naugroup.o naugroup.o naugroupW.o naugroupL.o nautinv.o nautinv1.o nautinvS.o nautinvS1.o nautinvW.o nautinvW1.o nautinvL.o nautinvL1.o \
+              config.log config.cache config.status \
+              nautestS nautestW nautestL naucompare nauty*.a dreadtest dreadtestS dreadtestS1 dreadtest4K dreadtest1 dreadtestW dreadtestW1 dreadtestL1 dreadtestL
+rm -rf bin/aarch64-apple-darwin24-default64-kv9
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' [0m
 mkdir -p bin/aarch64-apple-darwin24-default64-kv9
 cd nauty2_8_6 && rm -f *.o config.log config.cache config.status makefile
 # configure with --enable-generic to turn off -march=native which causes
 # problems when installing the result
 cd nauty2_8_6 && ./configure --enable-generic
-checking build system type... aarch64-apple-darwin24.5.0
-checking host system type... aarch64-apple-darwin24.5.0
+checking build system type... aarch64-apple-darwin24.6.0
+checking host system type... aarch64-apple-darwin24.6.0
 checking for gcc... gcc
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out

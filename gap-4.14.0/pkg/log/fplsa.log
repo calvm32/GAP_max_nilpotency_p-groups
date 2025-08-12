@@ -1,13 +1,13 @@
 
-Sun Jun 22 12:37:57 EDT 2025
+Mon Aug 11 13:01:38 MDT 2025
 
 [32m==== Checking fplsa[0m
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' 'clean' [0m
 rm -f bin/aarch64-apple-darwin24-default64-kv9/fplsa4
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' [0m
 mkdir -p bin/aarch64-apple-darwin24-default64-kv9
 cc -o bin/aarch64-apple-darwin24-default64-kv9/fplsa4  -O2 -g -Wall  src/fplsa4.c

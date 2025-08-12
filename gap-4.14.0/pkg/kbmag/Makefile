@@ -42,6 +42,6 @@ doc:
 	cd doc && ./make_doc
 
 Makefile: configure Makefile.in
-	./configure "/Users/cheldt/Documents/Code/GAP/GAP-4.14.0"
+	./configure "/Users/cheldt/Documents/Code/GAP/gap-4.14.0"
 
 .PHONY: all clean distclean test doc

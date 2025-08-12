@@ -90,9 +90,9 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = aarch64-apple-darwin24.5.0
-host_triplet = aarch64-apple-darwin24.5.0
-target_triplet = aarch64-apple-darwin24.5.0
+build_triplet = aarch64-apple-darwin24.6.0
+host_triplet = aarch64-apple-darwin24.6.0
+target_triplet = aarch64-apple-darwin24.6.0
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/ac_check_cxsc.m4 \
@@ -222,14 +222,14 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float/build-aux/missing' aclocal-1.16
+ACLOCAL = ${SHELL} '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float/build-aux/missing' aclocal-1.16
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float/build-aux/missing' autoconf
-AUTOHEADER = ${SHELL} '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float/build-aux/missing' autoheader
-AUTOMAKE = ${SHELL} '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float/build-aux/missing' automake-1.16
+AUTOCONF = ${SHELL} '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float/build-aux/missing' autoconf
+AUTOHEADER = ${SHELL} '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float/build-aux/missing' autoheader
+AUTOMAKE = ${SHELL} '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float/build-aux/missing' automake-1.16
 AWK = awk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -261,11 +261,11 @@ FILECMD = file
 FPLLL_CPPFLAGS = 
 FPLLL_LDFLAGS = 
 FPLLL_LIBS = 
-GAP = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/gap
+GAP = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/gap
 GAPARCH = aarch64-apple-darwin24-default64-kv9
-GAPROOT = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPROOT = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 GAP_CFLAGS =  -pthread -g -O2
-GAP_CPPFLAGS =  -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0 -DUSE_GASMAN=1   -I/src
+GAP_CPPFLAGS =  -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0 -DUSE_GASMAN=1   -I/src
 GAP_LDFLAGS =  
 GREP = /usr/bin/grep
 HAVE_CXX11 = 
@@ -274,7 +274,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LD = /Library/Developer/CommandLineTools/usr/bin/ld
+LD = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
 LDFLAGS = 
 LIBM = 
 LIBOBJS = 
@@ -284,7 +284,7 @@ LIPO = lipo
 LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = ${SHELL} '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float/build-aux/missing' makeinfo
+MAKEINFO = ${SHELL} '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float/build-aux/missing' makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = mkdir -p
 MPC_CPPFLAGS = 
@@ -316,10 +316,10 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = strip
 VERSION := $(shell grep '^Version :=' PackageInfo.g | cut -f2 -d'"')
-abs_builddir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float
-abs_srcdir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float
-abs_top_builddir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float
-abs_top_srcdir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float
+abs_builddir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float
+abs_srcdir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float
+abs_top_builddir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float
+abs_top_srcdir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -330,10 +330,10 @@ am__quote =
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
 bindir = ${exec_prefix}/bin
-build = aarch64-apple-darwin24.5.0
+build = aarch64-apple-darwin24.6.0
 build_alias = 
 build_cpu = aarch64
-build_os = darwin24.5.0
+build_os = darwin24.6.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -341,15 +341,15 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = aarch64-apple-darwin24.5.0
+host = aarch64-apple-darwin24.6.0
 host_alias = 
 host_cpu = aarch64
-host_os = darwin24.5.0
+host_os = darwin24.6.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float/build-aux/install-sh
+install_sh = ${SHELL} /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -358,7 +358,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/float
+prefix = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
@@ -366,10 +366,10 @@ sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
 sysconfdir = ${prefix}/etc
-target = aarch64-apple-darwin24.5.0
+target = aarch64-apple-darwin24.6.0
 target_alias = 
 target_cpu = aarch64
-target_os = darwin24.5.0
+target_os = darwin24.6.0
 target_vendor = apple
 top_build_prefix = 
 top_builddir = .
@@ -863,7 +863,7 @@ Changelog:
 	gitlog-to-changelog > $@
 
 doc: doc/float.xml gap/*.gd
-	/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/gap -A makedoc.g
+	/Users/cheldt/Documents/Code/GAP/gap-4.14.0/gap -A makedoc.g
 
 checkblocks:
 	grep '<#GAPDoc' PackageInfo.g lib/*d | awk -F'"' '{print $$2}' | sort > @@-blocks

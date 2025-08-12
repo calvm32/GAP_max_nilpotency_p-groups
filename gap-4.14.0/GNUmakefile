@@ -36,17 +36,17 @@ GAP_KERNEL_MINOR_VERSION = 1
 GAP_KERNEL_MAJOR_VERSION = 9
 
 # autoconf host system information (= system *for* which we are compiling)
-host = aarch64-apple-darwin24.5.0
+host = aarch64-apple-darwin24.6.0
 host_alias = 
 host_cpu = aarch64
-host_os = darwin24.5.0
+host_os = darwin24.6.0
 host_vendor = apple
 
 # autoconf build system information (= system *on* which we are compiling)
-build = aarch64-apple-darwin24.5.0
+build = aarch64-apple-darwin24.6.0
 build_alias = 
 build_cpu = aarch64
-build_os = darwin24.5.0
+build_os = darwin24.6.0
 build_vendor = apple
 
 # compile and linker flags
@@ -105,8 +105,8 @@ SHELL = /bin/sh
 EXEEXT = 
 
 # build paths
-abs_builddir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
-abs_srcdir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+abs_builddir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
+abs_srcdir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 builddir = .
 srcdir = .
 
@@ -114,8 +114,8 @@ srcdir = .
 # keeping the others makes it easier to "git bisect" back and forth
 top_builddir = .
 top_srcdir = .
-abs_top_builddir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
-abs_top_srcdir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+abs_top_builddir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
+abs_top_srcdir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 
 # install paths
 bindir = ${exec_prefix}/bin

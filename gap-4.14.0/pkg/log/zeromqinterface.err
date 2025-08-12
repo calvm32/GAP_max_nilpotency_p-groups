@@ -1,4 +1,0 @@
-[31mconfigure: WARNING: no valid ZMQ installation was found[0m
-[31mconfigure: error: ZeroMQ is required to build this package[0m
-[31mgmake: *** No rule to make target 'clean'.  Stop.[0m
-[31mgmake: *** No targets specified and no makefile found.  Stop.[0m

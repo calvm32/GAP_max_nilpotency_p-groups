@@ -1,8 +1,8 @@
 
-Sun Jun 22 12:38:20 EDT 2025
+Mon Aug 11 13:02:00 MDT 2025
 
 [32m==== Checking io[0m
-[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
 checking for gcc... gcc
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out
@@ -12,7 +12,7 @@ checking for suffix of object files... o
 checking whether the compiler supports GNU C... yes
 checking whether gcc accepts -g... yes
 checking for gcc option to enable C11 features... none needed
-checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 checking for GAP architecture... aarch64-apple-darwin24-default64-kv9
 checking for stdio.h... yes
 checking for stdlib.h... yes
@@ -95,6 +95,7 @@ checking for working vfork... (cached) yes
 configure: creating ./config.status
 config.status: creating Makefile
 config.status: creating gen/pkgconfig.h
+config.status: gen/pkgconfig.h is unchanged
 [32mRunning 'gmake' 'clean' [0m
 rm -rf bin/aarch64-apple-darwin24-default64-kv9 gen
 [32mRunning 'gmake' [0m

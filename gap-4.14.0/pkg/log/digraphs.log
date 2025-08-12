@@ -1,8 +1,8 @@
 
-Sun Jun 22 12:37:30 EDT 2025
+Mon Aug 11 13:01:11 MDT 2025
 
 [32m==== Checking digraphs[0m
-[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
 checking for gcc... gcc
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out
@@ -16,7 +16,7 @@ checking for g++... g++
 checking whether the compiler supports GNU C++... yes
 checking whether g++ accepts -g... yes
 checking for g++ option to enable C++11 features... none needed
-checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 checking for GAP architecture... checking whether to enable debug mode... no
 checking whether to enable stats mode... no
 checking whether to build with code coverage support... no
@@ -37,8 +37,10 @@ checking for __builtin_ctzll... yes
 configure: creating ./config.status
 config.status: creating Makefile
 config.status: creating gen/pkgconfig.h
+config.status: gen/pkgconfig.h is unchanged
 config.status: executing src/digraphs-config.h commands
 config.status: creating src/digraphs-config.h - prefix DIGRAPHS for gen/pkgconfig.h defines
+config.status: src/digraphs-config.h is unchanged
 [32mRunning 'gmake' 'clean' [0m
 rm -rf bin/aarch64-apple-darwin24-default64-kv9 gen
 find . -name '*.gcda' -delete

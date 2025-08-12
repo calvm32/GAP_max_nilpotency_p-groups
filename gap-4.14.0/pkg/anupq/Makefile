@@ -346,12 +346,12 @@ am__define_uniq_tagged_files = \
     if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
   done | $(am__uniquify_input)`
 AM_RECURSIVE_TARGETS = cscope
-ACLOCAL = ${SHELL} '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/anupq/cnf/missing' aclocal-1.16
+ACLOCAL = ${SHELL} '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/anupq/cnf/missing' aclocal-1.16
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
-AUTOCONF = ${SHELL} '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/anupq/cnf/missing' autoconf
-AUTOHEADER = ${SHELL} '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/anupq/cnf/missing' autoheader
-AUTOMAKE = ${SHELL} '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/anupq/cnf/missing' automake-1.16
+AUTOCONF = ${SHELL} '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/anupq/cnf/missing' autoconf
+AUTOHEADER = ${SHELL} '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/anupq/cnf/missing' autoheader
+AUTOMAKE = ${SHELL} '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/anupq/cnf/missing' automake-1.16
 AWK = awk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -367,12 +367,12 @@ ECHO_N =
 ECHO_T = 
 ETAGS = etags
 EXEEXT = 
-GAP = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/gap
+GAP = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/gap
 GAPARCH = aarch64-apple-darwin24-default64-kv9
-GAPROOT = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPROOT = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 GAP_CFLAGS =  -pthread -g -O2
-GAP_CPPFLAGS =  -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0 -DUSE_GASMAN=1   -I/src
-GAP_EXEC = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/gap
+GAP_CPPFLAGS =  -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0 -DUSE_GASMAN=1   -I/src
+GAP_EXEC = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/gap
 GAP_LDFLAGS =  
 GMP_CPPFLAGS = -I/opt/homebrew/include
 GMP_LDFLAGS = -L/opt/homebrew/lib
@@ -387,7 +387,7 @@ LIBOBJS =
 LIBS = 
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/anupq/cnf/missing' makeinfo
+MAKEINFO = ${SHELL} '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/anupq/cnf/missing' makeinfo
 MKDIR_P = mkdir -p
 OBJEXT = o
 PACKAGE = anupq
@@ -403,10 +403,10 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = 
 VERSION = package
-abs_builddir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/anupq
-abs_srcdir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/anupq
-abs_top_builddir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/anupq
-abs_top_srcdir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/anupq
+abs_builddir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/anupq
+abs_srcdir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/anupq
+abs_top_builddir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/anupq
+abs_top_srcdir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/anupq
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -425,7 +425,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/anupq/cnf/install-sh
+install_sh = ${SHELL} /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/anupq/cnf/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -472,7 +472,7 @@ BINARCHDIR = bin/$(GAPARCH)
 #
 #
 PQFLAGS = -DGAP_LINK_VIA_FILE -DGAP -DSTANDARD_PCP -DGROUP \
-	-DANUPQ_GAP_EXEC='"/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/gap"'
+	-DANUPQ_GAP_EXEC='"/Users/cheldt/Documents/Code/GAP/gap-4.14.0/gap"'
 pq_LDFLAGS = $(GMP_LDFLAGS)
 pq_LDADD = $(GMP_LIBS)
 pq_CPPFLAGS = $(GMP_CPPFLAGS) $(PQFLAGS)

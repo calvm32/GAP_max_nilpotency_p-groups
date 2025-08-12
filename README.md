@@ -1,9 +1,15 @@
-1. "gap" to start
+# Configuring GAP
 
-2. "quit;" to exit
+1. **./configure && make** to "compile the GAP core system"
 
-3. ex: "Read("../../GAPProgs/Example.g");" to load source code from a file
+2. "change to the *pkg* subdirectory and call **../bin/BuildPackages.sh**"
 
-4. for help, "?help" or for more specific help, "?sets"
+# Using GAP
 
-5. to ID the small group, IdSmallGroup( G )
+1. **./gap** to start
+
+2. **quit;** to exit
+
+3. ex: **Read("../../GAPProgs/Example.g");** to load source code from a file
+
+4. for help, **?help** or for more specific help, **?sets**

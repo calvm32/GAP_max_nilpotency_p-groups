@@ -1,5 +1,5 @@
 # read GAP's build settings
-GAPPATH = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 include $(GAPPATH)/sysinfo.gap
 
 NAUTYDIR = nauty2_8_6

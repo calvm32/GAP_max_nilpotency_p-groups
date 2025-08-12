@@ -1,9 +1,9 @@
 
-Sun Jun 22 12:38:11 EDT 2025
+Mon Aug 11 13:01:50 MDT 2025
 
 [32m==== Checking guava[0m
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' 'clean' [0m
 rm -f bin/aarch64-apple-darwin24-default64-kv9/*.o
 ( cd src && make clean )
@@ -11,10 +11,9 @@ rm -f leonconv
 rm -f *.o
 ( cd ./src/ctjhai && rm -f minimum-weight *.o)
 ( cd ./src/leon && make clean )
-[31mmake[1]: *** No rule to make target `clean'.  Stop.[0m
-[31mgmake: [Makefile:50: clean] Error 2 (ignored)[0m
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+rm -f *.o setstab cent inter desauto generate commut cjrndper orblist fndelt compgrp orbdes randobj wtdist 
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' [0m
 cc -O2   -c -o src/ctjhai/minimum-weight.o src/ctjhai/minimum-weight.c
 cc -O2   -c -o src/ctjhai/minimum-weight-gf2.o src/ctjhai/minimum-weight-gf2.c
@@ -52,6 +51,7 @@ checking whether make sets $(MAKE)... yes
 configure: creating ./config.status
 config.status: creating Makefile
 config.status: creating src/leon_config.h
+config.status: src/leon_config.h is unchanged
 gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src/leon'
 cc  -O2 -c   ./src/setstab.c 
 cc  -O2 -c   ./src/addsgen.c 
@@ -91,26 +91,26 @@ cc  -O2 -c   ./src/token.c
 cc  -O2 -c   ./src/util.c 
 cc -o setstab  -v setstab.o addsgen.o bitmanp.o chbase.o compcrep.o compsg.o copy.o cparstab.o csetstab.o cstborb.o cstrbas.o cuprstab.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o readpar.o readper.o readpts.o rprique.o storage.o token.o util.o  
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o setstab -L/usr/local/lib setstab.o addsgen.o bitmanp.o chbase.o compcrep.o compsg.o copy.o cparstab.o csetstab.o cstborb.o cstrbas.o cuprstab.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o readpar.o readper.o readpts.o rprique.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o setstab -L/usr/local/lib setstab.o addsgen.o bitmanp.o chbase.o compcrep.o compsg.o copy.o cparstab.o csetstab.o cstborb.o cstrbas.o cuprstab.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o readpar.o readper.o readpts.o rprique.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/cent.c 
 cc  -O2 -c   ./src/ccent.c 
 cc -o cent  -v cent.o addsgen.o bitmanp.o ccent.o chbase.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o readper.o rprique.o storage.o token.o util.o  
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cent -L/usr/local/lib cent.o addsgen.o bitmanp.o ccent.o chbase.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o readper.o rprique.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cent -L/usr/local/lib cent.o addsgen.o bitmanp.o ccent.o chbase.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o readper.o rprique.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/inter.c 
 cc  -O2 -c   ./src/cinter.c 
 cc -o inter  -v inter.o addsgen.o bitmanp.o chbase.o cinter.o compcrep.o compsg.o copy.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o rprique.o storage.o token.o util.o  
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o inter -L/usr/local/lib inter.o addsgen.o bitmanp.o chbase.o cinter.o compcrep.o compsg.o copy.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o rprique.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o inter -L/usr/local/lib inter.o addsgen.o bitmanp.o chbase.o cinter.o compcrep.o compsg.o copy.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readgrp.o rprique.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/desauto.c 
 cc  -O2 -c   ./src/cdesauto.c 
 cc  -O2 -c   ./src/cmatauto.c 
@@ -120,76 +120,76 @@ cc  -O2 -c   ./src/matrix.c
 cc  -O2 -c   ./src/readdes.c 
 cc -o desauto  -v desauto.o addsgen.o bitmanp.o cdesauto.o chbase.o cmatauto.o code.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o field.o inform.o matrix.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readdes.o readgrp.o readper.o rprique.o storage.o token.o util.o  
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o desauto -L/usr/local/lib desauto.o addsgen.o bitmanp.o cdesauto.o chbase.o cmatauto.o code.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o field.o inform.o matrix.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readdes.o readgrp.o readper.o rprique.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o desauto -L/usr/local/lib desauto.o addsgen.o bitmanp.o cdesauto.o chbase.o cmatauto.o code.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o errmesg.o essentia.o factor.o field.o inform.o matrix.o new.o oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o primes.o ptstbref.o randgrp.o randschr.o readdes.o readgrp.o readper.o rprique.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/generate.c 
 cc  -O2 -c   ./src/relator.c 
 cc  -O2 -c   ./src/stcs.c 
 cc -o generate  -v generate.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o relator.o stcs.o storage.o token.o util.o  
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o generate -L/usr/local/lib generate.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o relator.o stcs.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o generate -L/usr/local/lib generate.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o inform.o new.o oldcopy.o optsvec.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o relator.o stcs.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/commut.c 
 cc  -O2 -c   ./src/ccommut.c 
 cc -o commut  -v commut.o addsgen.o bitmanp.o chbase.o ccommut.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o storage.o token.o util.o 
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o commut -L/usr/local/lib commut.o addsgen.o bitmanp.o chbase.o ccommut.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o commut -L/usr/local/lib commut.o addsgen.o bitmanp.o chbase.o ccommut.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/cjrndper.c 
 cc -o cjrndper  -v cjrndper.o addsgen.o bitmanp.o chbase.o code.o copy.o cstborb.o errmesg.o essentia.o factor.o field.o matrix.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readdes.o readgrp.o readpar.o readper.o readpts.o storage.o token.o util.o 
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cjrndper -L/usr/local/lib cjrndper.o addsgen.o bitmanp.o chbase.o code.o copy.o cstborb.o errmesg.o essentia.o factor.o field.o matrix.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readdes.o readgrp.o readpar.o readper.o readpts.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cjrndper -L/usr/local/lib cjrndper.o addsgen.o bitmanp.o chbase.o code.o copy.o cstborb.o errmesg.o essentia.o factor.o field.o matrix.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readdes.o readgrp.o readpar.o readper.o readpts.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/orblist.c 
 cc -o orblist  -v orblist.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readpar.o readpts.o storage.o token.o util.o 
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o orblist -L/usr/local/lib orblist.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readpar.o readpts.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o orblist -L/usr/local/lib orblist.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readpar.o readpts.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/fndelt.c 
 cc -o fndelt  -v fndelt.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readper.o storage.o token.o util.o 
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o fndelt -L/usr/local/lib fndelt.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readper.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o fndelt -L/usr/local/lib fndelt.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readper.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/compgrp.c 
 cc -o compgrp  -v compgrp.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readpar.o readper.o readpts.o storage.o token.o util.o 
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o compgrp -L/usr/local/lib compgrp.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readpar.o readper.o readpts.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o compgrp -L/usr/local/lib compgrp.o addsgen.o bitmanp.o chbase.o copy.o cstborb.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readgrp.o readpar.o readper.o readpts.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/orbdes.c 
 cc -o orbdes  -v orbdes.o addsgen.o bitmanp.o chbase.o code.o copy.o cstborb.o errmesg.o essentia.o factor.o field.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readdes.o readgrp.o readper.o storage.o token.o util.o 
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o orbdes -L/usr/local/lib orbdes.o addsgen.o bitmanp.o chbase.o code.o copy.o cstborb.o errmesg.o essentia.o factor.o field.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readdes.o readgrp.o readper.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o orbdes -L/usr/local/lib orbdes.o addsgen.o bitmanp.o chbase.o code.o copy.o cstborb.o errmesg.o essentia.o factor.o field.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o randschr.o readdes.o readgrp.o readper.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/randobj.c 
 cc -o randobj  -v randobj.o bitmanp.o copy.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o readpar.o readpts.o storage.o token.o util.o  
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o randobj -L/usr/local/lib randobj.o bitmanp.o copy.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o readpar.o readpts.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o randobj -L/usr/local/lib randobj.o bitmanp.o copy.o errmesg.o essentia.o factor.o new.o oldcopy.o partn.o permgrp.o permut.o primes.o randgrp.o readpar.o readpts.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 cc  -O2 -c   ./src/wtdist.c 
 cc -o wtdist  -v wtdist.o bitmanp.o code.o copy.o errmesg.o essentia.o factor.o field.o new.o partn.o permgrp.o permut.o primes.o readdes.o storage.o token.o util.o  
 [31mApple clang version 17.0.0 (clang-1700.0.13.5)[0m
-[31mTarget: arm64-apple-darwin24.5.0[0m
+[31mTarget: arm64-apple-darwin24.6.0[0m
 [31mThread model: posix[0m
-[31mInstalledDir: /Library/Developer/CommandLineTools/usr/bin[0m
-[31m"/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o wtdist -L/usr/local/lib wtdist.o bitmanp.o code.o copy.o errmesg.o essentia.o factor.o field.o new.o partn.o permgrp.o permut.o primes.o readdes.o storage.o token.o util.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
+[31mInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin[0m
+[31m"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o wtdist -L/usr/local/lib wtdist.o bitmanp.o code.o copy.o errmesg.o essentia.o factor.o field.o new.o partn.o permgrp.o permut.o primes.o readdes.o storage.o token.o util.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a[0m
 gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src/leon'
 cd ./src; gmake CC="cc" CPPFLAGS="" CFLAGS="-O2" LDFLAGS="";
 gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src'

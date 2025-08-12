@@ -41,10 +41,10 @@ GAP_KERNEL_MAJOR_VERSION=9
 GAP_KERNEL_MINOR_VERSION=1
 
 # GAP: path to the `gap` executable (may be a shell script)
-GAP="/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/gap"
+GAP="/Users/cheldt/Documents/Code/GAP/gap-4.14.0/gap"
 
 # GAC: path to the `gac` executable (may be a shell script)
-GAC="/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/gac"
+GAC="/Users/cheldt/Documents/Code/GAP/gap-4.14.0/gac"
 
 # File extension used by object files created by GAC
 GAP_OBJEXT=o
@@ -55,7 +55,7 @@ GAP_CC="gcc "
 GAP_CXX="g++ "
 GAP_CFLAGS=" -pthread -g -O2"
 GAP_CXXFLAGS=" -pthread -g -O2"
-GAP_CPPFLAGS=" -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0 -DUSE_GASMAN=1  "
+GAP_CPPFLAGS=" -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0 -DUSE_GASMAN=1  "
 GAP_LDFLAGS=" "
 
 # Extra flags for use by `gac`

@@ -1,16 +1,16 @@
 
-Sun Jun 22 12:37:58 EDT 2025
+Mon Aug 11 13:01:38 MDT 2025
 
 [32m==== Checking gauss[0m
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' 'clean' [0m
 rm -rf bin/aarch64-apple-darwin24-default64-kv9 Makefile *~
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' [0m
 mkdir -p bin/aarch64-apple-darwin24-default64-kv9
-"/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/gac" -d -o bin/aarch64-apple-darwin24-default64-kv9/gauss.so src/gauss.c
-gcc -pthread -g -O2 -fno-common -o /var/folders/1t/96r_qb_51p507p12tvpxxx040000gn/T/gacXXXXXXX.gpCwt33oAz/67639_gauss.o -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0 -DUSE_GASMAN=1 -c src/gauss.c
-gcc -o bin/aarch64-apple-darwin24-default64-kv9/gauss.so /var/folders/1t/96r_qb_51p507p12tvpxxx040000gn/T/gacXXXXXXX.gpCwt33oAz/67639_gauss.o -bundle -undefined dynamic_lookup -Wl,-no_fixup_chains
-rm -f /var/folders/1t/96r_qb_51p507p12tvpxxx040000gn/T/gacXXXXXXX.gpCwt33oAz/67639_gauss.o
+"/Users/cheldt/Documents/Code/GAP/gap-4.14.0/gac" -d -o bin/aarch64-apple-darwin24-default64-kv9/gauss.so src/gauss.c
+gcc -pthread -g -O2 -fno-common -o /var/folders/1t/96r_qb_51p507p12tvpxxx040000gn/T/gacXXXXXXX.Ih0w1LnY61/36554_gauss.o -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0 -DUSE_GASMAN=1 -c src/gauss.c
+gcc -o bin/aarch64-apple-darwin24-default64-kv9/gauss.so /var/folders/1t/96r_qb_51p507p12tvpxxx040000gn/T/gacXXXXXXX.Ih0w1LnY61/36554_gauss.o -bundle -undefined dynamic_lookup -Wl,-no_fixup_chains
+rm -f /var/folders/1t/96r_qb_51p507p12tvpxxx040000gn/T/gacXXXXXXX.Ih0w1LnY61/36554_gauss.o

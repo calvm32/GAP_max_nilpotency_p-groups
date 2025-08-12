@@ -1,16 +1,16 @@
 
-Sun Jun 22 12:37:21 EDT 2025
+Mon Aug 11 13:01:02 MDT 2025
 
 [32m==== Checking cohomolo[0m
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' 'clean' [0m
 cd standalone/progs.d; gmake clean
 gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/cohomolo/standalone/progs.d'
 /bin/rm -f *.o
 gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/cohomolo/standalone/progs.d'
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' [0m
 mkdir -p bin/aarch64-apple-darwin24-default64-kv9;
 cd standalone/progs.d;\
@@ -75,10 +75,4 @@ cc -c -O2 -g -fno-builtin -Wno-implicit-function-declaration -Wno-unused-result 
 cc  -o ..//..//bin/aarch64-apple-darwin24-default64-kv9/crrun crd.o crp1.o crp2.o matfns.o
 cc -c -O2 -g -fno-builtin -Wno-implicit-function-declaration -Wno-unused-result readrels.c
 cc  -o ..//..//bin/aarch64-apple-darwin24-default64-kv9/readrels readrels.o
-cp cohomology.gap ..//..//bin/aarch64-apple-darwin24-default64-kv9/cohomology.gap
-chmod +x ..//..//bin/aarch64-apple-darwin24-default64-kv9/cohomology.gap
-cp execcmd.gap ..//..//bin/aarch64-apple-darwin24-default64-kv9/execcmd.gap
-chmod +x ..//..//bin/aarch64-apple-darwin24-default64-kv9/execcmd.gap
-cp calcpres.gap ..//..//bin/aarch64-apple-darwin24-default64-kv9/calcpres.gap
-chmod +x ..//..//bin/aarch64-apple-darwin24-default64-kv9/calcpres.gap
 gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/cohomolo/standalone/progs.d'

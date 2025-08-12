@@ -3,7 +3,7 @@
 set -e
 set -o pipefail
 
-GAP=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/gap
+GAP=/Users/cheldt/Documents/Code/GAP/gap-4.14.0/gap
 GAPARGS="-b -m 1g -x 80 -q --quitonbreak -r"
 if [ "$1" == "nopdf" ]; then
   NOPDF=", \"nopdf\""
@@ -15,7 +15,7 @@ echo "Building GAP manuals"
 echo "--------------------"
 
 "$GAP" $GAPARGS -A <<EOF
-base:="/Users/cheldt/Documents/Code/GAP/GAP-4.14.0";;
+base:="/Users/cheldt/Documents/Code/GAP/gap-4.14.0";;
 books:=["ref", "tut", "hpc", "dev"];;
 latexOpts := rec(Maintitlesize := "\\\\fontsize{36}{38}\\\\selectfont");;
 UpdateXMLForUserPreferences();

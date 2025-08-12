@@ -1,6 +1,6 @@
 # makefile prototype for the Browse package                    Frank Lübeck
 
-GAPPATH=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH=/Users/cheldt/Documents/Code/GAP/gap-4.14.0
 include $(GAPPATH)/sysinfo.gap
 
 GAPINCL=-I$(GAPPATH)/src -I$(GAPPATH)/bin/$(GAParch)

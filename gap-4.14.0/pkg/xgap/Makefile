@@ -41,7 +41,7 @@ bin/$(GAParch)/configure: cnf/configure.out
 	cp cnf/configure.out bin/$(GAParch)/configure
 
 bin/$(GAParch)/Makefile: bin/$(GAParch)/configure cnf/config.hin
-	( cd bin/$(GAParch) ; CC=$(CC) ./configure --with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0 )
+	( cd bin/$(GAParch) ; CC=$(CC) ./configure --with-gaproot=/Users/cheldt/Documents/Code/GAP/gap-4.14.0 )
 
 compile: bin/$(GAParch)/configure bin/$(GAParch)/Makefile xgap.sh
 	( cd bin/$(GAParch) ; $(MAKE) CC=$(CC) )

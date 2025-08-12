@@ -5,5 +5,5 @@ KEXT_NAME = crypting
 KEXT_SOURCES = src/crypting.c
 
 # include shared GAP package build system
-GAPPATH = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 include Makefile.gappkg

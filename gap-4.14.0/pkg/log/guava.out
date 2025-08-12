@@ -1,9 +1,9 @@
 
-Sun Jun 22 12:38:11 EDT 2025
+Mon Aug 11 13:01:50 MDT 2025
 
 [32m==== Checking guava[0m
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' 'clean' [0m
 rm -f bin/aarch64-apple-darwin24-default64-kv9/*.o
 ( cd src && make clean )
@@ -11,8 +11,9 @@ rm -f leonconv
 rm -f *.o
 ( cd ./src/ctjhai && rm -f minimum-weight *.o)
 ( cd ./src/leon && make clean )
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+rm -f *.o setstab cent inter desauto generate commut cjrndper orblist fndelt compgrp orbdes randobj wtdist 
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' [0m
 cc -O2   -c -o src/ctjhai/minimum-weight.o src/ctjhai/minimum-weight.c
 cc -O2   -c -o src/ctjhai/minimum-weight-gf2.o src/ctjhai/minimum-weight-gf2.c
@@ -50,6 +51,7 @@ checking whether make sets $(MAKE)... yes
 configure: creating ./config.status
 config.status: creating Makefile
 config.status: creating src/leon_config.h
+config.status: src/leon_config.h is unchanged
 gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src/leon'
 cc  -O2 -c   ./src/setstab.c 
 cc  -O2 -c   ./src/addsgen.c 

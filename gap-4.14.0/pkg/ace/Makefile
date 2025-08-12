@@ -1,6 +1,6 @@
 # sample makefile
 CC?=cc
-GAPPATH=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH=/Users/cheldt/Documents/Code/GAP/gap-4.14.0
 
 all:
 	@mkdir -p bin/aarch64-apple-darwin24-default64-kv9

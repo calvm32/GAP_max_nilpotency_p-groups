@@ -66,13 +66,13 @@ PATH_SEPARATOR=":"
 
 # The host system.
 host_alias=
-host=arm-apple-darwin24.5.0
-host_os=darwin24.5.0
+host=arm-apple-darwin24.6.0
+host_os=darwin24.6.0
 
 # The build system.
 build_alias=
-build=arm-apple-darwin24.5.0
-build_os=darwin24.5.0
+build=arm-apple-darwin24.6.0
+build_os=darwin24.6.0
 
 # A sed program that does not truncate output.
 SED="/usr/bin/sed"
@@ -281,7 +281,7 @@ finish_eval=""
 hardcode_into_libs=no
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/Library/Developer/CommandLineTools/usr/lib/clang/17  /usr/local/lib"
+sys_lib_search_path_spec="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17  /usr/local/lib"
 
 # Detected run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"
@@ -304,7 +304,7 @@ striplib="strip -x"
 
 
 # The linker used to build libraries.
-LD="/Library/Developer/CommandLineTools/usr/bin/ld"
+LD="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
 
 # How to create reloadable object files.
 reload_flag=" -r"
@@ -11761,7 +11761,7 @@ build_old_libs=`case $build_libtool_libs in yes) echo no;; *) echo yes;; esac`
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
 # The linker used to build libraries.
-LD="/Library/Developer/CommandLineTools/usr/bin/ld"
+LD="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
 
 # How to create reloadable object files.
 reload_flag=" -r"

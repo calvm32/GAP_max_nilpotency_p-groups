@@ -6,7 +6,7 @@
 #  This file is free software, see license information at the end.
 #
 
-GAPPATH = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 
 # read GAP's build settings
 include $(GAPPATH)/sysinfo.gap

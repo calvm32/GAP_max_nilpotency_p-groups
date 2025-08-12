@@ -1,12 +1,12 @@
 
-Sun Jun 22 12:39:38 EDT 2025
+Mon Aug 11 13:03:24 MDT 2025
 
 [32m==== Checking semigroups[0m
 [32mlibsemigroups v2.7.3 is required by this version of Semigroups[0m
 [32mThe libsemigroups directory exists and is non-empty[0m
 [32mThe file libsemigroups/.VERSION is present[0m
 [32mThe installed version of libsemigroups is v2.7.3[0m
-[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
 checking for g++... g++
 checking whether the C++ compiler works... yes
 checking for C++ compiler default output file name... a.out
@@ -17,10 +17,10 @@ checking whether the compiler supports GNU C++... yes
 checking whether g++ accepts -g... yes
 checking for g++ option to enable C++11 features... none needed
 checking whether g++ supports C++14 features by default... yes
-checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 checking for GAP architecture... aarch64-apple-darwin24-default64-kv9
-checking build system type... aarch64-apple-darwin24.5.0
-checking host system type... aarch64-apple-darwin24.5.0
+checking build system type... aarch64-apple-darwin24.6.0
+checking host system type... aarch64-apple-darwin24.6.0
 checking for gcc... gcc
 checking whether the compiler supports GNU C... yes
 checking whether gcc accepts -g... yes
@@ -60,13 +60,15 @@ checking whether C++ compiler accepts -mavx... no
 configure: creating ./config.status
 config.status: creating GNUmakefile
 config.status: creating gen/pkgconfig.h
+config.status: gen/pkgconfig.h is unchanged
 config.status: executing src/semigroups-config.hpp commands
 config.status: creating src/semigroups-config.hpp - prefix SEMIGROUPS for gen/pkgconfig.h defines
-=== configuring in libsemigroups (/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups)
-configure: running /bin/sh ./configure --disable-option-checking '--prefix=${abs_top_builddir}/../bin/'  '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' --cache-file=/dev/null --srcdir=.
-checking build system type... aarch64-apple-darwin24.5.0
-checking host system type... aarch64-apple-darwin24.5.0
-checking target system type... aarch64-apple-darwin24.5.0
+config.status: src/semigroups-config.hpp is unchanged
+=== configuring in libsemigroups (/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/semigroups/libsemigroups)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=${abs_top_builddir}/../bin/'  '--with-gaproot=/Users/cheldt/Documents/Code/GAP/gap-4.14.0' --cache-file=/dev/null --srcdir=.
+checking build system type... aarch64-apple-darwin24.6.0
+checking host system type... aarch64-apple-darwin24.6.0
+checking target system type... aarch64-apple-darwin24.6.0
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether sleep supports fractional seconds... yes
 checking filesystem timestamp resolution... 2
@@ -117,14 +119,14 @@ checking for a sed that does not truncate output... (cached) /usr/bin/sed
 checking for grep that handles long lines and -e... /usr/bin/grep
 checking for egrep... /usr/bin/grep -E
 checking for fgrep... /usr/bin/grep -F
-checking for ld used by gcc... /Library/Developer/CommandLineTools/usr/bin/ld
-checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking for ld used by gcc... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
 checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
 checking the name lister (/usr/bin/nm -B) interface... BSD nm
 checking the maximum length of command line arguments... 786432
-checking how to convert aarch64-apple-darwin24.5.0 file names to aarch64-apple-darwin24.5.0 format... func_convert_file_noop
-checking how to convert aarch64-apple-darwin24.5.0 file names to toolchain format... func_convert_file_noop
-checking for /Library/Developer/CommandLineTools/usr/bin/ld option to reload object files... -r
+checking how to convert aarch64-apple-darwin24.6.0 file names to aarch64-apple-darwin24.6.0 format... func_convert_file_noop
+checking how to convert aarch64-apple-darwin24.6.0 file names to toolchain format... func_convert_file_noop
+checking for /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld option to reload object files... -r
 checking for file... file
 checking for objdump... objdump
 checking how to recognize dependent libraries... pass_all
@@ -165,24 +167,24 @@ checking if gcc PIC flag -fno-common -DPIC works... yes
 checking if gcc static flag -static works... no
 checking if gcc supports -c -o file.o... yes
 checking if gcc supports -c -o file.o... (cached) yes
-checking whether the gcc linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
-checking dynamic linker characteristics... darwin24.5.0 dyld
+checking whether the gcc linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin24.6.0 dyld
 checking how to hardcode library paths into programs... immediate
 checking whether stripping libraries is possible... yes
 checking if libtool supports shared libraries... yes
 checking whether to build shared libraries... yes
 checking whether to build static libraries... yes
 checking how to run the C++ preprocessor... g++ -E
-checking for ld used by g++... /Library/Developer/CommandLineTools/usr/bin/ld
-checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
-checking whether the g++ linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking for ld used by g++... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
+checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
 checking for g++ option to produce PIC... -fno-common -DPIC
 checking if g++ PIC flag -fno-common -DPIC works... yes
 checking if g++ static flag -static works... no
 checking if g++ supports -c -o file.o... yes
 checking if g++ supports -c -o file.o... (cached) yes
-checking whether the g++ linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
-checking dynamic linker characteristics... darwin24.5.0 dyld
+checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin24.6.0 dyld
 checking how to hardcode library paths into programs... immediate
 checking for limits.h... yes
 checking for stdint.h... (cached) yes
@@ -229,9 +231,11 @@ configure: creating ./config.status
 config.status: creating Makefile
 config.status: creating libsemigroups.pc
 config.status: creating config/config.h
+config.status: config/config.h is unchanged
 config.status: executing depfiles commands
 config.status: executing include/libsemigroups/config.hpp commands
 config.status: creating include/libsemigroups/config.hpp - prefix LIBSEMIGROUPS for config/config.h defines
+config.status: include/libsemigroups/config.hpp is unchanged
 config.status: executing libtool commands
 [32mRunning 'gmake' 'clean' [0m
 rm -rf bin/aarch64-apple-darwin24-default64-kv9 gen
@@ -240,147 +244,6 @@ find . -name '*.gcda' -delete
 ./config.status gen/pkgconfig.h
 config.status: creating gen/pkgconfig.h
 echo > gen/pkgconfig.h.stamp
-gmake -C libsemigroups install
-gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/semigroups/libsemigroups'
-  CXX      src/libsemigroups_la-bipart.lo
-  CXX      src/libsemigroups_la-bmat8.lo
-  CXX      src/libsemigroups_la-cong-intf.lo
-  CXX      src/libsemigroups_la-cong-pair.lo
-  CXX      src/libsemigroups_la-cong.lo
-  CXX      src/libsemigroups_la-constants.lo
-  CXX      src/libsemigroups_la-coset.lo
-  CXX      src/libsemigroups_la-exception.lo
-  CXX      src/libsemigroups_la-felsch-tree.lo
-  CXX      src/libsemigroups_la-forest.lo
-  CXX      src/libsemigroups_la-fpsemi-examples.lo
-  CXX      src/libsemigroups_la-fpsemi-intf.lo
-  CXX      src/libsemigroups_la-fpsemi.lo
-  CXX      src/libsemigroups_la-freeband.lo
-  CXX      src/libsemigroups_la-froidure-pin-base.lo
-  CXX      src/libsemigroups_la-kambites.lo
-  CXX      src/libsemigroups_la-knuth-bendix.lo
-  CXX      src/libsemigroups_la-make-present.lo
-  CXX      src/libsemigroups_la-node-manager.lo
-  CXX      src/libsemigroups_la-obvinf.lo
-  CXX      src/libsemigroups_la-pbr.lo
-  CXX      src/libsemigroups_la-race.lo
-  CXX      src/libsemigroups_la-report.lo
-  CXX      src/libsemigroups_la-runner.lo
-  CXX      src/libsemigroups_la-siso.lo
-  CXX      src/libsemigroups_la-string.lo
-  CXX      src/libsemigroups_la-stephen.lo
-  CXX      src/libsemigroups_la-timer.lo
-  CXX      src/libsemigroups_la-todd-coxeter.lo
-  CXX      src/libsemigroups_la-ukkonen.lo
-  CXX      src/libsemigroups_la-wilo.lo
-  CXX      src/libsemigroups_la-wislo.lo
-  CXX      src/libsemigroups_la-word.lo
-  CXXLD    libsemigroups.la
-gmake[2]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/semigroups/libsemigroups'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/lib'
- /bin/sh ./libtool   --mode=install /usr/bin/install -c   libsemigroups.la '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/lib'
-libtool: install: /usr/bin/install -c .libs/libsemigroups.2.dylib /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/lib/libsemigroups.2.dylib
-libtool: install: (cd /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/lib && { ln -s -f libsemigroups.2.dylib libsemigroups.dylib || { rm -f libsemigroups.dylib && ln -s libsemigroups.2.dylib libsemigroups.dylib; }; })
-libtool: install: /usr/bin/install -c .libs/libsemigroups.lai /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/lib/libsemigroups.la
-libtool: install: /usr/bin/install -c .libs/libsemigroups.a /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/lib/libsemigroups.a
-libtool: install: chmod 644 /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/lib/libsemigroups.a
-libtool: install: ranlib /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/lib/libsemigroups.a
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/backward-cpp'
- /usr/bin/install -c -m 644 extern/backward-cpp/backward.hpp '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/backward-cpp'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/StdList extern/eigen-3.3.9/Eigen/Jacobi extern/eigen-3.3.9/Eigen/OrderingMethods extern/eigen-3.3.9/Eigen/CholmodSupport extern/eigen-3.3.9/Eigen/SparseCore extern/eigen-3.3.9/Eigen/Cholesky extern/eigen-3.3.9/Eigen/SparseLU extern/eigen-3.3.9/Eigen/SuperLUSupport extern/eigen-3.3.9/Eigen/Dense extern/eigen-3.3.9/Eigen/SPQRSupport extern/eigen-3.3.9/Eigen/LU extern/eigen-3.3.9/Eigen/Eigenvalues extern/eigen-3.3.9/Eigen/PaStiXSupport extern/eigen-3.3.9/Eigen/CMakeLists.txt extern/eigen-3.3.9/Eigen/Eigen extern/eigen-3.3.9/Eigen/SVD extern/eigen-3.3.9/Eigen/SparseQR extern/eigen-3.3.9/Eigen/MetisSupport extern/eigen-3.3.9/Eigen/IterativeLinearSolvers extern/eigen-3.3.9/Eigen/Geometry extern/eigen-3.3.9/Eigen/StdDeque extern/eigen-3.3.9/Eigen/QR extern/eigen-3.3.9/Eigen/QtAlignedMalloc extern/eigen-3.3.9/Eigen/StdVector extern/eigen-3.3.9/Eigen/Core extern/eigen-3.3.9/Eigen/PardisoSupport extern/eigen-3.3.9/Eigen/SparseCholesky extern/eigen-3.3.9/Eigen/UmfPackSupport extern/eigen-3.3.9/Eigen/Sparse extern/eigen-3.3.9/Eigen/Householder '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Cholesky'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Cholesky/LLT_LAPACKE.h extern/eigen-3.3.9/Eigen/src/Cholesky/LLT.h extern/eigen-3.3.9/Eigen/src/Cholesky/LDLT.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Cholesky'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/CholmodSupport'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/CholmodSupport/CholmodSupport.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/CholmodSupport'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/AltiVec'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/arch/AltiVec/MathFunctions.h extern/eigen-3.3.9/Eigen/src/Core/arch/AltiVec/Complex.h extern/eigen-3.3.9/Eigen/src/Core/arch/AltiVec/PacketMath.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/AltiVec'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/AVX512'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/arch/AVX512/MathFunctions.h extern/eigen-3.3.9/Eigen/src/Core/arch/AVX512/PacketMath.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/AVX512'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/AVX'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/arch/AVX/MathFunctions.h extern/eigen-3.3.9/Eigen/src/Core/arch/AVX/TypeCasting.h extern/eigen-3.3.9/Eigen/src/Core/arch/AVX/Complex.h extern/eigen-3.3.9/Eigen/src/Core/arch/AVX/PacketMath.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/AVX'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/CUDA'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/arch/CUDA/MathFunctions.h extern/eigen-3.3.9/Eigen/src/Core/arch/CUDA/Half.h extern/eigen-3.3.9/Eigen/src/Core/arch/CUDA/PacketMathHalf.h extern/eigen-3.3.9/Eigen/src/Core/arch/CUDA/TypeCasting.h extern/eigen-3.3.9/Eigen/src/Core/arch/CUDA/Complex.h extern/eigen-3.3.9/Eigen/src/Core/arch/CUDA/PacketMath.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/CUDA'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/Default'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/arch/Default/ConjHelper.h extern/eigen-3.3.9/Eigen/src/Core/arch/Default/Settings.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/Default'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/NEON'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/arch/NEON/MathFunctions.h extern/eigen-3.3.9/Eigen/src/Core/arch/NEON/Complex.h extern/eigen-3.3.9/Eigen/src/Core/arch/NEON/PacketMath.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/NEON'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/SSE'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/arch/SSE/MathFunctions.h extern/eigen-3.3.9/Eigen/src/Core/arch/SSE/TypeCasting.h extern/eigen-3.3.9/Eigen/src/Core/arch/SSE/Complex.h extern/eigen-3.3.9/Eigen/src/Core/arch/SSE/PacketMath.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/SSE'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/ZVector'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/arch/ZVector/MathFunctions.h extern/eigen-3.3.9/Eigen/src/Core/arch/ZVector/Complex.h extern/eigen-3.3.9/Eigen/src/Core/arch/ZVector/PacketMath.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/arch/ZVector'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/functors'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/functors/BinaryFunctors.h extern/eigen-3.3.9/Eigen/src/Core/functors/AssignmentFunctors.h extern/eigen-3.3.9/Eigen/src/Core/functors/UnaryFunctors.h extern/eigen-3.3.9/Eigen/src/Core/functors/StlFunctors.h extern/eigen-3.3.9/Eigen/src/Core/functors/TernaryFunctors.h extern/eigen-3.3.9/Eigen/src/Core/functors/NullaryFunctors.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/functors'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/NestByValue.h extern/eigen-3.3.9/Eigen/src/Core/GlobalFunctions.h extern/eigen-3.3.9/Eigen/src/Core/Array.h extern/eigen-3.3.9/Eigen/src/Core/SelfCwiseBinaryOp.h extern/eigen-3.3.9/Eigen/src/Core/CwiseBinaryOp.h extern/eigen-3.3.9/Eigen/src/Core/VectorBlock.h extern/eigen-3.3.9/Eigen/src/Core/Dot.h extern/eigen-3.3.9/Eigen/src/Core/Assign.h extern/eigen-3.3.9/Eigen/src/Core/ProductEvaluators.h extern/eigen-3.3.9/Eigen/src/Core/BandMatrix.h extern/eigen-3.3.9/Eigen/src/Core/Inverse.h extern/eigen-3.3.9/Eigen/src/Core/MatrixBase.h extern/eigen-3.3.9/Eigen/src/Core/GenericPacketMath.h extern/eigen-3.3.9/Eigen/src/Core/Transpose.h extern/eigen-3.3.9/Eigen/src/Core/ArrayBase.h extern/eigen-3.3.9/Eigen/src/Core/CwiseTernaryOp.h extern/eigen-3.3.9/Eigen/src/Core/Ref.h extern/eigen-3.3.9/Eigen/src/Core/Visitor.h extern/eigen-3.3.9/Eigen/src/Core/StableNorm.h extern/eigen-3.3.9/Eigen/src/Core/Replicate.h extern/eigen-3.3.9/Eigen/src/Core/Transpositions.h extern/eigen-3.3.9/Eigen/src/Core/SelfAdjointView.h extern/eigen-3.3.9/Eigen/src/Core/PlainObjectBase.h extern/eigen-3.3.9/Eigen/src/Core/DenseStorage.h extern/eigen-3.3.9/Eigen/src/Core/ConditionEstimator.h extern/eigen-3.3.9/Eigen/src/Core/NumTraits.h extern/eigen-3.3.9/Eigen/src/Core/CwiseUnaryView.h extern/eigen-3.3.9/Eigen/src/Core/DiagonalProduct.h extern/eigen-3.3.9/Eigen/src/Core/MathFunctions.h extern/eigen-3.3.9/Eigen/src/Core/VectorwiseOp.h extern/eigen-3.3.9/Eigen/src/Core/Solve.h extern/eigen-3.3.9/Eigen/src/Core/Reverse.h extern/eigen-3.3.9/Eigen/src/Core/ReturnByValue.h extern/eigen-3.3.9/Eigen/src/Core/Product.h extern/eigen-3.3.9/Eigen/src/Core/DenseBase.h extern/eigen-3.3.9/Eigen/src/Core/BooleanRedux.h extern/eigen-3.3.9/Eigen/src/Core/NoAlias.h extern/eigen-3.3.9/Eigen/src/Core/ArrayWrapper.h extern/eigen-3.3.9/Eigen/src/Core/Random.h extern/eigen-3.3.9/Eigen/src/Core/MapBase.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/Block.h extern/eigen-3.3.9/Eigen/src/Core/DiagonalMatrix.h extern/eigen-3.3.9/Eigen/src/Core/Diagonal.h extern/eigen-3.3.9/Eigen/src/Core/Map.h extern/eigen-3.3.9/Eigen/src/Core/CoreIterators.h extern/eigen-3.3.9/Eigen/src/Core/CommaInitializer.h extern/eigen-3.3.9/Eigen/src/Core/Select.h extern/eigen-3.3.9/Eigen/src/Core/GeneralProduct.h extern/eigen-3.3.9/Eigen/src/Core/EigenBase.h extern/eigen-3.3.9/Eigen/src/Core/Fuzzy.h extern/eigen-3.3.9/Eigen/src/Core/SolverBase.h extern/eigen-3.3.9/Eigen/src/Core/ForceAlignedAccess.h extern/eigen-3.3.9/Eigen/src/Core/Matrix.h extern/eigen-3.3.9/Eigen/src/Core/Redux.h extern/eigen-3.3.9/Eigen/src/Core/TriangularMatrix.h extern/eigen-3.3.9/Eigen/src/Core/Stride.h extern/eigen-3.3.9/Eigen/src/Core/CoreEvaluators.h extern/eigen-3.3.9/Eigen/src/Core/Assign_MKL.h extern/eigen-3.3.9/Eigen/src/Core/IO.h extern/eigen-3.3.9/Eigen/src/Core/CwiseUnaryOp.h extern/eigen-3.3.9/Eigen/src/Core/AssignEvaluator.h extern/eigen-3.3.9/Eigen/src/Core/CwiseNullaryOp.h extern/eigen-3.3.9/Eigen/src/Core/PermutationMatrix.h extern/eigen-3.3.9/Eigen/src/Core/Swap.h extern/eigen-3.3.9/Eigen/src/Core/SolveTriangular.h extern/eigen-3.3.9/Eigen/src/Core/DenseCoeffsBase.h extern/eigen-3.3.9/Eigen/src/Core/MathFunctionsImpl.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/products'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h extern/eigen-3.3.9/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h extern/eigen-3.3.9/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h extern/eigen-3.3.9/Eigen/src/Core/products/TriangularSolverVector.h extern/eigen-3.3.9/Eigen/src/Core/products/GeneralBlockPanelKernel.h extern/eigen-3.3.9/Eigen/src/Core/products/TriangularMatrixVector.h extern/eigen-3.3.9/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h extern/eigen-3.3.9/Eigen/src/Core/products/Parallelizer.h extern/eigen-3.3.9/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h extern/eigen-3.3.9/Eigen/src/Core/products/SelfadjointProduct.h extern/eigen-3.3.9/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h extern/eigen-3.3.9/Eigen/src/Core/products/SelfadjointMatrixVector.h extern/eigen-3.3.9/Eigen/src/Core/products/TriangularSolverMatrix.h extern/eigen-3.3.9/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h extern/eigen-3.3.9/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h extern/eigen-3.3.9/Eigen/src/Core/products/SelfadjointRank2Update.h extern/eigen-3.3.9/Eigen/src/Core/products/GeneralMatrixVector.h extern/eigen-3.3.9/Eigen/src/Core/products/SelfadjointMatrixMatrix.h extern/eigen-3.3.9/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h extern/eigen-3.3.9/Eigen/src/Core/products/TriangularMatrixMatrix.h extern/eigen-3.3.9/Eigen/src/Core/products/GeneralMatrixMatrix.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/products'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/util'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Core/util/Macros.h extern/eigen-3.3.9/Eigen/src/Core/util/DisableStupidWarnings.h extern/eigen-3.3.9/Eigen/src/Core/util/Constants.h extern/eigen-3.3.9/Eigen/src/Core/util/NonMPL2.h extern/eigen-3.3.9/Eigen/src/Core/util/XprHelper.h extern/eigen-3.3.9/Eigen/src/Core/util/MKL_support.h extern/eigen-3.3.9/Eigen/src/Core/util/ForwardDeclarations.h extern/eigen-3.3.9/Eigen/src/Core/util/BlasUtil.h extern/eigen-3.3.9/Eigen/src/Core/util/Memory.h extern/eigen-3.3.9/Eigen/src/Core/util/StaticAssert.h extern/eigen-3.3.9/Eigen/src/Core/util/ReenableStupidWarnings.h extern/eigen-3.3.9/Eigen/src/Core/util/Meta.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Core/util'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Eigenvalues'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Eigenvalues/ComplexEigenSolver.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/RealQZ.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/Tridiagonalization.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/EigenSolver.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/ComplexSchur.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/HessenbergDecomposition.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/RealSchur.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h extern/eigen-3.3.9/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Eigenvalues'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Geometry/arch'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Geometry/arch/Geometry_SSE.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Geometry/arch'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Geometry'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Geometry/Umeyama.h extern/eigen-3.3.9/Eigen/src/Geometry/OrthoMethods.h extern/eigen-3.3.9/Eigen/src/Geometry/RotationBase.h extern/eigen-3.3.9/Eigen/src/Geometry/EulerAngles.h extern/eigen-3.3.9/Eigen/src/Geometry/AngleAxis.h extern/eigen-3.3.9/Eigen/src/Geometry/Hyperplane.h extern/eigen-3.3.9/Eigen/src/Geometry/AlignedBox.h extern/eigen-3.3.9/Eigen/src/Geometry/ParametrizedLine.h extern/eigen-3.3.9/Eigen/src/Geometry/Translation.h extern/eigen-3.3.9/Eigen/src/Geometry/Transform.h extern/eigen-3.3.9/Eigen/src/Geometry/Quaternion.h extern/eigen-3.3.9/Eigen/src/Geometry/Scaling.h extern/eigen-3.3.9/Eigen/src/Geometry/Rotation2D.h extern/eigen-3.3.9/Eigen/src/Geometry/Homogeneous.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Geometry'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Householder'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Householder/BlockHouseholder.h extern/eigen-3.3.9/Eigen/src/Householder/HouseholderSequence.h extern/eigen-3.3.9/Eigen/src/Householder/Householder.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Householder'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/IterativeLinearSolvers'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h extern/eigen-3.3.9/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h extern/eigen-3.3.9/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h extern/eigen-3.3.9/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h extern/eigen-3.3.9/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h extern/eigen-3.3.9/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h extern/eigen-3.3.9/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h extern/eigen-3.3.9/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/IterativeLinearSolvers'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Jacobi'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/Jacobi/Jacobi.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/Jacobi'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/LU/arch'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/LU/arch/Inverse_SSE.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/LU/arch'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/LU'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/LU/FullPivLU.h extern/eigen-3.3.9/Eigen/src/LU/Determinant.h extern/eigen-3.3.9/Eigen/src/LU/InverseImpl.h extern/eigen-3.3.9/Eigen/src/LU/PartialPivLU.h extern/eigen-3.3.9/Eigen/src/LU/PartialPivLU_LAPACKE.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/LU'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/MetisSupport'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/MetisSupport/MetisSupport.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/MetisSupport'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/misc'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/misc/Image.h extern/eigen-3.3.9/Eigen/src/misc/Kernel.h extern/eigen-3.3.9/Eigen/src/misc/RealSvd2x2.h extern/eigen-3.3.9/Eigen/src/misc/lapack.h extern/eigen-3.3.9/Eigen/src/misc/lapacke_mangling.h extern/eigen-3.3.9/Eigen/src/misc/blas.h extern/eigen-3.3.9/Eigen/src/misc/lapacke.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/misc'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/OrderingMethods'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/OrderingMethods/Eigen_Colamd.h extern/eigen-3.3.9/Eigen/src/OrderingMethods/Ordering.h extern/eigen-3.3.9/Eigen/src/OrderingMethods/Amd.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/OrderingMethods'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/PardisoSupport'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/PardisoSupport/PardisoSupport.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/PardisoSupport'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/PaStiXSupport'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/PaStiXSupport/PaStiXSupport.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/PaStiXSupport'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/plugins'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/plugins/CommonCwiseBinaryOps.h extern/eigen-3.3.9/Eigen/src/plugins/MatrixCwiseBinaryOps.h extern/eigen-3.3.9/Eigen/src/plugins/ArrayCwiseUnaryOps.h extern/eigen-3.3.9/Eigen/src/plugins/MatrixCwiseUnaryOps.h extern/eigen-3.3.9/Eigen/src/plugins/BlockMethods.h extern/eigen-3.3.9/Eigen/src/plugins/CommonCwiseUnaryOps.h extern/eigen-3.3.9/Eigen/src/plugins/ArrayCwiseBinaryOps.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/plugins'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/QR'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h extern/eigen-3.3.9/Eigen/src/QR/FullPivHouseholderQR.h extern/eigen-3.3.9/Eigen/src/QR/HouseholderQR.h extern/eigen-3.3.9/Eigen/src/QR/HouseholderQR_LAPACKE.h extern/eigen-3.3.9/Eigen/src/QR/CompleteOrthogonalDecomposition.h extern/eigen-3.3.9/Eigen/src/QR/ColPivHouseholderQR.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/QR'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SparseCholesky'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/SparseCholesky/SimplicialCholesky.h extern/eigen-3.3.9/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SparseCholesky'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SparseCore'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseSparseProductWithPruning.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseRedux.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseDiagonalProduct.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseMatrix.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseFuzzy.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseSelfAdjointView.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseCwiseBinaryOp.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseProduct.h extern/eigen-3.3.9/Eigen/src/SparseCore/CompressedStorage.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseCompressedBase.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseCwiseUnaryOp.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseMap.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseDenseProduct.h extern/eigen-3.3.9/Eigen/src/SparseCore/MappedSparseMatrix.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseUtil.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseBlock.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseVector.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseView.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseAssign.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseTranspose.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseDot.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseRef.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseColEtree.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparsePermutation.h extern/eigen-3.3.9/Eigen/src/SparseCore/AmbiVector.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseSolverBase.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseTriangularView.h extern/eigen-3.3.9/Eigen/src/SparseCore/TriangularSolver.h extern/eigen-3.3.9/Eigen/src/SparseCore/SparseMatrixBase.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SparseCore'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SparseLU'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_kernel_bmod.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_relax_snode.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_panel_dfs.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_column_dfs.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_gemm_kernel.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_Utils.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_Memory.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLUImpl.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_pruneL.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_column_bmod.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_panel_bmod.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_pivotL.h extern/eigen-3.3.9/Eigen/src/SparseLU/SparseLU_Structs.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SparseLU'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SparseQR'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/SparseQR/SparseQR.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SparseQR'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SPQRSupport'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/SPQRSupport/SuiteSparseQRSupport.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SPQRSupport'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/StlSupport'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/StlSupport/details.h extern/eigen-3.3.9/Eigen/src/StlSupport/StdDeque.h extern/eigen-3.3.9/Eigen/src/StlSupport/StdList.h extern/eigen-3.3.9/Eigen/src/StlSupport/StdVector.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/StlSupport'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SuperLUSupport'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/SuperLUSupport/SuperLUSupport.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SuperLUSupport'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SVD'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/SVD/JacobiSVD_LAPACKE.h extern/eigen-3.3.9/Eigen/src/SVD/UpperBidiagonalization.h extern/eigen-3.3.9/Eigen/src/SVD/JacobiSVD.h extern/eigen-3.3.9/Eigen/src/SVD/BDCSVD.h extern/eigen-3.3.9/Eigen/src/SVD/SVDBase.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/SVD'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/UmfPackSupport'
- /usr/bin/install -c -m 644 extern/eigen-3.3.9/Eigen/src/UmfPackSupport/UmfPackSupport.h '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/Eigen/src/UmfPackSupport'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/lib/pkgconfig'
- /usr/bin/install -c -m 644 libsemigroups.pc '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/lib/pkgconfig'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups'
- /usr/bin/install -c -m 644 include/libsemigroups/action.hpp include/libsemigroups/adapters.hpp include/libsemigroups/bipart.hpp include/libsemigroups/bitset.hpp include/libsemigroups/bmat8.hpp include/libsemigroups/bmat.hpp include/libsemigroups/bruidhinn-traits.hpp include/libsemigroups/config.hpp include/libsemigroups/cong-intf.hpp include/libsemigroups/cong-pair-impl.hpp include/libsemigroups/cong-pair.hpp include/libsemigroups/cong-wrap.hpp include/libsemigroups/cong.hpp include/libsemigroups/constants.hpp include/libsemigroups/containers.hpp include/libsemigroups/coset.hpp include/libsemigroups/debug.hpp include/libsemigroups/deprecated.hpp include/libsemigroups/digraph-helper.hpp include/libsemigroups/digraph-with-sources.hpp include/libsemigroups/digraph-with-sources.tpp include/libsemigroups/digraph.hpp include/libsemigroups/exception.hpp include/libsemigroups/fastest-bmat.hpp include/libsemigroups/felsch-tree.hpp include/libsemigroups/felsch-digraph.hpp include/libsemigroups/felsch-digraph.tpp include/libsemigroups/forest.hpp include/libsemigroups/fpsemi-examples.hpp include/libsemigroups/fpsemi-intf.hpp include/libsemigroups/fpsemi.hpp include/libsemigroups/freeband.hpp include/libsemigroups/froidure-pin-base.hpp include/libsemigroups/froidure-pin-impl.hpp include/libsemigroups/froidure-pin.hpp include/libsemigroups/function-ref.hpp include/libsemigroups/hpcombi.hpp include/libsemigroups/int-range.hpp include/libsemigroups/iterator.hpp include/libsemigroups/kambites.hpp '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups'
- /usr/bin/install -c -m 644 include/libsemigroups/kbe.hpp include/libsemigroups/knuth-bendix.hpp include/libsemigroups/konieczny.hpp include/libsemigroups/libsemigroups.hpp include/libsemigroups/make-froidure-pin.hpp include/libsemigroups/make-present.hpp include/libsemigroups/matrix.hpp include/libsemigroups/node-manager.hpp include/libsemigroups/obvinf.hpp include/libsemigroups/order.hpp include/libsemigroups/pbr.hpp include/libsemigroups/pool.hpp include/libsemigroups/present.hpp include/libsemigroups/present.tpp include/libsemigroups/race.hpp include/libsemigroups/report.hpp include/libsemigroups/runner.hpp include/libsemigroups/schreier-sims.hpp include/libsemigroups/schreier-sims-helper.hpp include/libsemigroups/sims1.hpp include/libsemigroups/sims1.tpp include/libsemigroups/siso.hpp include/libsemigroups/stl.hpp include/libsemigroups/stephen.hpp include/libsemigroups/string-view.hpp include/libsemigroups/string.hpp include/libsemigroups/tce.hpp include/libsemigroups/timer.hpp include/libsemigroups/todd-coxeter-digraph.hpp include/libsemigroups/todd-coxeter-digraph.tpp include/libsemigroups/todd-coxeter.hpp include/libsemigroups/transf.hpp include/libsemigroups/types.hpp include/libsemigroups/uf.hpp include/libsemigroups/ukkonen.hpp include/libsemigroups/ukkonen.tpp include/libsemigroups/wilo.hpp include/libsemigroups/wislo.hpp include/libsemigroups/word.hpp '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups'
- mkdir -p '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/textflowcpp'
- /usr/bin/install -c -m 644 extern/textflowcpp/TextFlow.hpp '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups/libsemigroups/../bin/include/libsemigroups/textflowcpp'
-gmake[2]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/semigroups/libsemigroups'
-gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/semigroups/libsemigroups'
-# Cygwin only looks for DLLs in the same directory as the executable
-# resides in. The following achieves that assuming that the GAP
-# being used was self-compiled by the user. This supports
-# both older GAPs with libtool (first) and GAP without libtool (second)
-if test -f bin/bin/cygsemigroups*.dll ; then if test -d /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/.libs; then cp bin/bin/cygsemigroups*.dll /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/.libs/ ; fi ; fi
-if test -f bin/bin/cygsemigroups*.dll ; then cp bin/bin/cygsemigroups*.dll /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/ ; fi
    GAC     src/bipart.cpp => gen/src/bipart.o
    GAC     src/cong.cpp => gen/src/cong.o
    GAC     src/conglatt.cpp => gen/src/conglatt.o

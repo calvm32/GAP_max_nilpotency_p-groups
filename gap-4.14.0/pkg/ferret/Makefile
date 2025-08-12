@@ -23,7 +23,7 @@ KEXT_CXXFLAGS = $(timingflag) $(checkflag) \
 KEXT_USE_AUTOCONF = 1
 
 # include shared GAP package build system
-GAPPATH = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 include Makefile.gappkg
 
 symmetry_detect: .FORCE

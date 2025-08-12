@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/normalizinterface/NormalizInstallDir/lib'
+libdir='/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/normalizinterface/NormalizInstallDir/lib'

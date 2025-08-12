@@ -10,7 +10,7 @@ KEXT_LDFLAGS =
 KEXT_LDFLAGS += -lstdc++  # for bliss: add C++ library
 
 # configure settings
-GAPPATH = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 WITH_INCLUDED_BLISS = yes
 WITH_INCLUDED_PLANARITY = yes
 PLANARITY_SUITE_DIR = extern/edge-addition-planarity-suite-Version_3.0.1.0

@@ -39,7 +39,7 @@ print "The pq C program compiled ok! We test it's the right one below.\n\n",
 # Test GAP
 print "Checking GAP ...\n";
 $pq_does_not_know_GAP = 0;
-$GAP_EXEC = "/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/gap";
+$GAP_EXEC = "/Users/cheldt/Documents/Code/GAP/gap-4.14.0/gap";
 if ( ($gap = $ENV{ANUPQ_GAP_EXEC}) ne "" ) {
   print " Found ANUPQ_GAP_EXEC environment variable set to: $gap\n"; 
 } elsif ($GAP_EXEC ne "") {

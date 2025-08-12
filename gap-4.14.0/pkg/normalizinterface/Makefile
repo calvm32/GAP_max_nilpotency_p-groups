@@ -9,11 +9,11 @@ KEXT_SOURCES = src/normaliz.cc
 # now, just always request C++14 support. Note: we use gnu++14 instead
 # of std++14 only for compatibility with GAP versions before 4.12 on
 # Cygwin, see <https://github.com/gap-packages/NormalizInterface/pull/91>.
-KEXT_CXXFLAGS =  -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/normalizinterface/NormalizInstallDir/include  -I/opt/homebrew/include -std=gnu++14
-KEXT_LDFLAGS =  -L/opt/homebrew/lib -lgmp -Wl,-rpath,/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/normalizinterface/NormalizInstallDir/lib -L/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/normalizinterface/NormalizInstallDir/lib -lnormaliz -lstdc++
+KEXT_CXXFLAGS =  -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/normalizinterface/NormalizInstallDir/include  -I/opt/homebrew/include -std=gnu++14
+KEXT_LDFLAGS =  -L/opt/homebrew/lib -lgmp -Wl,-rpath,/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/normalizinterface/NormalizInstallDir/lib -L/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/normalizinterface/NormalizInstallDir/lib -lnormaliz -lstdc++
 
 KEXT_USE_AUTOCONF = 1
 
 # include shared GAP package build system
-GAPPATH = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 include Makefile.gappkg

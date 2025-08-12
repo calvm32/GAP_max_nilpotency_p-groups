@@ -1,9 +1,9 @@
 
-Sun Jun 22 12:38:28 EDT 2025
+Mon Aug 11 13:02:09 MDT 2025
 
 [32m==== Checking kbmag[0m
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' 'clean' [0m
 cd standalone/lib; gmake clean
 gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/lib'
@@ -13,8 +13,8 @@ cd standalone/src; gmake clean
 gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/src'
 /bin/rm -f *.o core a.out *\~
 gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/src'
-[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-Using settings from /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/sysinfo.gap
+[32mRunning './configure' '/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+Using settings from /Users/cheldt/Documents/Code/GAP/gap-4.14.0/sysinfo.gap
 [32mRunning 'gmake' [0m
 mkdir -p bin/aarch64-apple-darwin24-default64-kv9;
 cd standalone/lib; gmake CC="cc" CFLAGS="-O2 -g -Wall -Wno-char-subscripts" LDFLAGS=""
@@ -57,10 +57,6 @@ cd standalone/src; gmake CC="cc" CFLAGS="-O2 -g -Wall -Wno-char-subscripts" LDFL
 gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/kbmag/standalone/src'
 cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib kbprog.c
 cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/kbprog kbprog.o ../lib/fsalib.a
-cp autcos ../../bin/aarch64-apple-darwin24-default64-kv9/autcos
-chmod +x ../../bin/aarch64-apple-darwin24-default64-kv9/autcos
-cp autgroup ../../bin/aarch64-apple-darwin24-default64-kv9/autgroup
-chmod +x ../../bin/aarch64-apple-darwin24-default64-kv9/autgroup
 cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsaand.c
 cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/fsaand fsaand.o ../lib/fsalib.a
 cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib fsaandnot.c
@@ -137,8 +133,6 @@ cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpmult2.c
 cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpmult2 gpmult2.o ../lib/fsalib.a
 cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpsubpres.c
 cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpsubpres gpsubpres.o ../lib/fsalib.a
-cp gpsubwa ../../bin/aarch64-apple-darwin24-default64-kv9/gpsubwa
-chmod +x ../../bin/aarch64-apple-darwin24-default64-kv9/gpsubwa
 cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib gpwa.c
 cc  -o ../../bin/aarch64-apple-darwin24-default64-kv9/gpwa gpwa.o ../lib/fsalib.a
 cc -c -O2 -g -Wall -Wno-char-subscripts -I../lib kbprogcos.c

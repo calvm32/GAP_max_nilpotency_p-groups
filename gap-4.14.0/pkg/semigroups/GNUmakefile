@@ -7,12 +7,12 @@ KEXT_CXXFLAGS = -I./bin/include -I./bin/include/libsemigroups -std=gnu++14 -O3
 KEXT_LDFLAGS = -Wl,-rpath,$(abs_top_builddir)/bin/lib -L./bin/lib -lsemigroups
 
 # configure settings
-GAPPATH = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 HPCOMBI_CONSTEXPR_FUN_ARGS = 
 LIBSEMIGROUPS_HPCOMBI_ENABLED = 
 WITH_INCLUDED_LIBSEMIGROUPS = yes
 SYS_IS_CYGWIN = 
-abs_top_builddir = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/semigroups
+abs_top_builddir = /Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/semigroups
 
 # sources
 KEXT_SOURCES =  src/bipart.cpp

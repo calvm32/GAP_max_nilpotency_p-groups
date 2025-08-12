@@ -1,11 +1,11 @@
 
-Sun Jun 22 12:37:50 EDT 2025
+Mon Aug 11 13:01:30 MDT 2025
 
 [32m==== Checking float[0m
-[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
-checking build system type... aarch64-apple-darwin24.5.0
-checking host system type... aarch64-apple-darwin24.5.0
-checking target system type... aarch64-apple-darwin24.5.0
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
+checking build system type... aarch64-apple-darwin24.6.0
+checking host system type... aarch64-apple-darwin24.6.0
+checking target system type... aarch64-apple-darwin24.6.0
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
 checking for a race-free mkdir -p... mkdir -p
@@ -32,15 +32,15 @@ checking for a sed that does not truncate output... /usr/bin/sed
 checking for grep that handles long lines and -e... /usr/bin/grep
 checking for egrep... /usr/bin/grep -E
 checking for fgrep... /usr/bin/grep -F
-checking for ld used by gcc... /Library/Developer/CommandLineTools/usr/bin/ld
-checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking for ld used by gcc... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
 checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
 checking the name lister (/usr/bin/nm -B) interface... BSD nm
 checking whether ln -s works... yes
 checking the maximum length of command line arguments... 786432
-checking how to convert aarch64-apple-darwin24.5.0 file names to aarch64-apple-darwin24.5.0 format... func_convert_file_noop
-checking how to convert aarch64-apple-darwin24.5.0 file names to toolchain format... func_convert_file_noop
-checking for /Library/Developer/CommandLineTools/usr/bin/ld option to reload object files... -r
+checking how to convert aarch64-apple-darwin24.6.0 file names to aarch64-apple-darwin24.6.0 format... func_convert_file_noop
+checking how to convert aarch64-apple-darwin24.6.0 file names to toolchain format... func_convert_file_noop
+checking for /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld option to reload object files... -r
 checking for file... file
 checking for objdump... objdump
 checking how to recognize dependent libraries... pass_all
@@ -82,8 +82,8 @@ checking if gcc PIC flag -fno-common -DPIC works... yes
 checking if gcc static flag -static works... no
 checking if gcc supports -c -o file.o... yes
 checking if gcc supports -c -o file.o... (cached) yes
-checking whether the gcc linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
-checking dynamic linker characteristics... darwin24.5.0 dyld
+checking whether the gcc linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin24.6.0 dyld
 checking how to hardcode library paths into programs... immediate
 checking for dlopen in -ldl... yes
 checking whether a program can dlopen itself... yes
@@ -104,22 +104,22 @@ checking whether g++ accepts -g... yes
 checking for g++ option to enable C++11 features... none needed
 checking dependency style of g++... gcc3
 checking how to run the C++ preprocessor... g++ -E
-checking for ld used by g++... /Library/Developer/CommandLineTools/usr/bin/ld
-checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
-checking whether the g++ linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking for ld used by g++... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
+checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
 checking for g++ option to produce PIC... -fno-common -DPIC
 checking if g++ PIC flag -fno-common -DPIC works... yes
 checking if g++ static flag -static works... no
 checking if g++ supports -c -o file.o... yes
 checking if g++ supports -c -o file.o... (cached) yes
-checking whether the g++ linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
-checking dynamic linker characteristics... darwin24.5.0 dyld
+checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin24.6.0 dyld
 checking how to hardcode library paths into programs... immediate
 checking for float.h... yes
 checking for stdlib.h... (cached) yes
 checking for an ANSI C-conforming const... yes
 checking for inline... inline
-checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 checking for GAP architecture... aarch64-apple-darwin24-default64-kv9
 checking for mpfr.h... no
 checking for mpfr_sqrt in -lmpfr... no
@@ -130,6 +130,7 @@ configure: creating ./config.status
 config.status: creating Makefile
 config.status: creating src/Makefile
 config.status: creating src/floatconfig.h
+config.status: src/floatconfig.h is unchanged
 config.status: executing depfiles commands
 config.status: executing libtool commands
 [32mRunning 'gmake' 'clean' [0m
@@ -150,8 +151,8 @@ Making all in src
 gmake[1]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float/src'
 gmake  all-am
 gmake[2]: Entering directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float/src'
-/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0 -DUSE_GASMAN=1   -I/src       -pthread -g -O2 -g -O2 -MT float_la-float.lo -MD -MP -MF .deps/float_la-float.Tpo -c -o float_la-float.lo `test -f 'float.c' || echo './'`float.c
-libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/GAP-4.14.0 -DUSE_GASMAN=1 -I/src -pthread -g -O2 -g -O2 -MT float_la-float.lo -MD -MP -MF .deps/float_la-float.Tpo -c float.c  -fno-common -DPIC -o .libs/float_la-float.o
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0 -DUSE_GASMAN=1   -I/src       -pthread -g -O2 -g -O2 -MT float_la-float.lo -MD -MP -MF .deps/float_la-float.Tpo -c -o float_la-float.lo `test -f 'float.c' || echo './'`float.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/build -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0/src -I/Users/cheldt/Documents/Code/GAP/gap-4.14.0 -DUSE_GASMAN=1 -I/src -pthread -g -O2 -g -O2 -MT float_la-float.lo -MD -MP -MF .deps/float_la-float.Tpo -c float.c  -fno-common -DPIC -o .libs/float_la-float.o
 gmake[2]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float/src'
 gmake[1]: Leaving directory '/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/float/src'
 

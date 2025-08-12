@@ -429,7 +429,7 @@ Copyright (C) 2023 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/Users/cheldt/Documents/Code/GAP/GAP-4.14.0/pkg/guava/src/leon'
+ac_pwd='/Users/cheldt/Documents/Code/GAP/gap-4.14.0/pkg/guava/src/leon'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 test -n "$AWK" || AWK=awk

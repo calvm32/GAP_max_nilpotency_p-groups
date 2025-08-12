@@ -1,4 +1,4 @@
-GAPPATH=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH=/Users/cheldt/Documents/Code/GAP/gap-4.14.0
 GAPARCH=aarch64-apple-darwin24-default64-kv9
 CFLAGS  += -O2
 SRCDIR  = ./src/leon

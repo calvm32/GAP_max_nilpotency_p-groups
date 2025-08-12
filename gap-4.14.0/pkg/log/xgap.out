@@ -1,12 +1,12 @@
 
-Sun Jun 22 12:44:43 EDT 2025
+Mon Aug 11 13:07:54 MDT 2025
 
 [32m==== Checking xgap[0m
-[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
 checking for make... make
-checking build system type... aarch64-apple-darwin24.5.0
-checking host system type... aarch64-apple-darwin24.5.0
-checking target system type... aarch64-apple-darwin24.5.0
+checking build system type... aarch64-apple-darwin24.6.0
+checking host system type... aarch64-apple-darwin24.6.0
+checking target system type... aarch64-apple-darwin24.6.0
 checking for gcc... gcc
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out
@@ -18,7 +18,7 @@ checking whether gcc accepts -g... yes
 checking for gcc option to enable C11 features... none needed
 checking whether make sets $(MAKE)... yes
 checking for CONFIGNAME... none
-checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+checking for GAP root directory... /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 checking for GAP architecture... aarch64-apple-darwin24-default64-kv9
 configure: creating ./config.status
 config.status: creating Makefile
@@ -30,7 +30,7 @@ rm -f xgap.sh bin/xgap.sh
 [32mRunning 'gmake' [0m
 mkdir -p bin/aarch64-apple-darwin24-default64-kv9
 cp cnf/configure.out bin/aarch64-apple-darwin24-default64-kv9/configure
-( cd bin/aarch64-apple-darwin24-default64-kv9 ; CC=gcc ./configure --with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0 )
+( cd bin/aarch64-apple-darwin24-default64-kv9 ; CC=gcc ./configure --with-gaproot=/Users/cheldt/Documents/Code/GAP/gap-4.14.0 )
 checking for gcc... gcc
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out
@@ -42,9 +42,9 @@ checking whether gcc accepts -g... yes
 checking for gcc option to enable C11 features... none needed
 checking whether gcc and cc understand -c and -o together... yes
 checking for an ANSI C-conforming const... yes
-checking build system type... aarch64-apple-darwin24.5.0
-checking host system type... aarch64-apple-darwin24.5.0
-checking target system type... aarch64-apple-darwin24.5.0
+checking build system type... aarch64-apple-darwin24.6.0
+checking host system type... aarch64-apple-darwin24.6.0
+checking target system type... aarch64-apple-darwin24.6.0
 checking for stdio.h... yes
 checking for stdlib.h... yes
 checking for string.h... yes

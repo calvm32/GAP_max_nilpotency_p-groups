@@ -5,7 +5,7 @@
 CC ?= gcc
 
 BINDIR = bin/aarch64-apple-darwin24-default64-kv9
-GAPPATH = /Users/cheldt/Documents/Code/GAP/GAP-4.14.0
+GAPPATH = /Users/cheldt/Documents/Code/GAP/gap-4.14.0
 
 CFLAGS ?= -O2 -g -Wall
 

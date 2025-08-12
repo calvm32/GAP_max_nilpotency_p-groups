@@ -1,8 +1,8 @@
 
-Sun Jun 22 12:44:37 EDT 2025
+Mon Aug 11 13:07:48 MDT 2025
 
 [32m==== Checking simpcomp[0m
-[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/GAP-4.14.0' [0m
+[32mRunning './configure' '--with-gaproot=/Users/cheldt/Documents/Code/GAP/gap-4.14.0' [0m
 [31mconfigure: WARNING: unrecognized options: --with-gaproot[0m
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
