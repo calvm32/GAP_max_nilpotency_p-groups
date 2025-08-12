@@ -6,10 +6,12 @@
 
 # Using GAP
 
-1. **./gap** to start
+1. **cd gap-4.14.0** to enter the correct directory
 
-2. **quit;** to exit
+2. **./gap** to start
 
-3. ex: **Read("../../GAPProgs/Example.g");** to load source code from a file
+3. ex: **Read("../AbsolutePath/../Example.g");** to load source code from a file
 
 4. for help, **?help** or for more specific help, **?sets**
+
+5. **quit;** to exit

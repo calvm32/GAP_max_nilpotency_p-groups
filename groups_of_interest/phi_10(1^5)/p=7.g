@@ -1,5 +1,5 @@
 # choose p
-p := 5;
+p := 7;
 
 F := FreeGroup("s1","s2","s3","s4","s5");;
 s := GeneratorsOfGroup(F);
@@ -35,6 +35,6 @@ Add(rels, s5^p);
 G := F / NormalClosure(F, rels);
 
 # inspect
-Print(Size(G), "\n"); # 3125
+Print(Size(G), "\n"); # 16807
 Print(StructureDescription(G), "\n"); # ((C5 x C5 x C5) : C5) : C5
-Print(IdSmallGroup(G), "\n"); # [ 3125, 33 ]
+Print(IdSmallGroup(G), "\n"); # Error
