@@ -1,17 +1,27 @@
 # Configuring GAP
 
-1. **./configure && make** to "compile the GAP core system"
+1. "**./configure && make**"
+    - compile the GAP core system
 
-2. "change to the *pkg* subdirectory and call **../bin/BuildPackages.sh**"
+2. "**cd pkg**"
+    - change to the *pkg* subdirectory
+
+3. "**../bin/BuildPackages.sh**"
+    - finish configuring
 
 # Using GAP
 
-1. **cd gap-4.14.0** to enter the correct directory
+1. "**cd gap-4.14.0**"
+    - enter the correct directory
 
-2. **./gap** to start
+2. "**./gap**"
+    - start
 
-3. ex: **Read("../AbsolutePath/../Example.g");** to load source code from a file
+3. "**Read("../AbsolutePath/../Example.g");**"
+    - load source code from a file
 
-4. for help, **?help** or for more specific help, **?sets**
+4. "**?help** and **?sets**"
+    - for help and more specific help
 
-5. **quit;** to exit
+5. "**quit;**"
+    - to exit
