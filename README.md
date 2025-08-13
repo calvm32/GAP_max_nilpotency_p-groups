@@ -1,12 +1,15 @@
 # Configuring GAP
 
-1. "**./configure && make**"
+1. Find the instructions for your operating system
+    - view *https://www.gap-system.org/install/*
+
+2. "**./configure && make**"
     - compile the GAP core system
 
-2. "**cd pkg**"
+3. "**cd pkg**"
     - change to the *pkg* subdirectory
 
-3. "**../bin/BuildPackages.sh**"
+4. "**../bin/BuildPackages.sh**"
     - finish configuring
 
 # Using GAP
