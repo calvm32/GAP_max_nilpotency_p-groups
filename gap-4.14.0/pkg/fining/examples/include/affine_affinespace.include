@@ -1,8 +1,0 @@
-gap&gt; AffineSpace(3,GF(4));
-AG(3, 4)
-gap&gt; AffineSpace(3,4);
-AG(3, 4)
-gap&gt; AG(3,GF(4));
-AG(3, 4)
-gap&gt; AG(3,4);
-AG(3, 4)

@@ -1,3 +1,0 @@
-gap> R:=ResolutionGraphOfGroups(D,8);;
-gap> Size(R);
-[ 16, 68, 162, 302, 480, 627, 869, 1290 ]

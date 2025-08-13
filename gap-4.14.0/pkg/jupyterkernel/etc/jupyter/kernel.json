@@ -1,2 +1,0 @@
-{"argv": ["jupyter-kernel-gap", "{connection_file}"], "display_name": "GAP 4", "language": "gap", "codemirror_mode": "gap", "env": {"PS1": "$"}, "interrupt_mode": "message" }
-

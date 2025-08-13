@@ -1,5 +1,0 @@
-GAPROOT=/Users/cheldt/Documents/Code/GAP/gap-4.14.0
-ARCHDIR=aarch64-apple-darwin24-default64-kv9
-CC=gcc 
-FLAGS= -pthread -g -O2 
-WITHGMP=--with-gmp=/opt/homebrew

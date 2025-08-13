@@ -1,7 +1,0 @@
-## Group: [56, 11]
-## Difference Sets: 0
-## Time:  0:00:00.064
-
-return [
-];
-

@@ -1,4 +1,0 @@
-gap&gt; UnderlyingVectorSpace(PG(5,4));
-( GF(2^2)^6 )
-gap&gt; UnderlyingVectorSpace(HermitianPolarSpace(4,4));
-( GF(2^2)^5 )

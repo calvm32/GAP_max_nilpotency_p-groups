@@ -1,2 +1,0 @@
-gap> Lk:=LinkingFormHomeomorphismInvariant(W);
-[ 0, 4/5 ]

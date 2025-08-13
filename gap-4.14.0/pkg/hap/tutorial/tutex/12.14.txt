@@ -1,3 +1,0 @@
-gap> IsClosedManifold(Wtilde);
-
-true

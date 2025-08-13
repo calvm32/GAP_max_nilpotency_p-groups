@@ -1,3 +1,0 @@
-DeclareOperation("HasseDiagramAsList",[IsRecord]);
-        
-       

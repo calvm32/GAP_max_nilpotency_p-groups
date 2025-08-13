@@ -1,3 +1,0 @@
-gap> F:=FundamentalDomainBieberbachGroup(G);
-&lt;polymake object&gt;
-gap> Display(F);

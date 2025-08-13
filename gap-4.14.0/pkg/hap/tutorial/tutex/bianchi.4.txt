@@ -1,3 +1,0 @@
-gap> D:=BianchiPolyhedron(-33);;
-gap> Display3D(OQ,D);;
-gap> Display2D(OQ,D);;

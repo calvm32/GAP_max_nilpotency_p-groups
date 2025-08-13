@@ -1,2 +1,0 @@
-DeclareGlobalFunction("SgpVizTest");
-DeclareGlobalFunction("SgpVizInfo");

@@ -1,3 +1,0 @@
-gap> F:=FundamentalGroupWithPathReps(L);;
-gap> StructureDescription(F);
-"C11"

@@ -1,1 +1,0 @@
-CustomView := UNSAFE_VIEW;

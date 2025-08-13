@@ -1,9 +1,0 @@
-[31mrm: conftest.dSYM: is a directory[0m
-[31mfunctions/Polyeder/refine_fuber.c:281:6: warning: variable 'p' set but not used [-Wunused-but-set-variable][0m
-[31m281 |  int p,n;[0m
-[31m|      ^[0m
-[31m1 warning generated.[0m
-[31mfunctions/Polyeder/refine_polyeder.c:273:11: warning: variable 'z' set but not used [-Wunused-but-set-variable][0m
-[31m273 |  int p,n, z;[0m
-[31m|           ^[0m
-[31m1 warning generated.[0m

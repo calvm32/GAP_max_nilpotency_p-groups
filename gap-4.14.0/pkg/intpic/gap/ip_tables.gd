@@ -1,2 +1,0 @@
-#################################################
-DeclareGlobalFunction("IP_TableWithModularOrder");

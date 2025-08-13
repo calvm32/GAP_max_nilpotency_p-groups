@@ -1,3 +1,0 @@
-gap> P0:=PersistentHomologyOfFilteredSparseChainComplex(C,0);;
-gap> P1:=PersistentHomologyOfFilteredSparseChainComplex(C,1);;
-gap> BarCodeCompactDisplay(P0);

@@ -1,4 +1,0 @@
-gap&gt; ProjectiveDimension(PG(7,7));
-7
-gap&gt; ProjectiveDimension(EllipticQuadric(5,2));
-5

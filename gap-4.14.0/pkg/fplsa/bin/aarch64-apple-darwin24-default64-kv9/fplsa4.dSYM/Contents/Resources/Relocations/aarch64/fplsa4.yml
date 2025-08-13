@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     'bin/aarch64-apple-darwin24-default64-kv9/fplsa4'
-relocations:     []
-...

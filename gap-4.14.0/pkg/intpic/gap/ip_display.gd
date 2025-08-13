@@ -1,1 +1,0 @@
-DeclareGlobalFunction("IP_Splash");

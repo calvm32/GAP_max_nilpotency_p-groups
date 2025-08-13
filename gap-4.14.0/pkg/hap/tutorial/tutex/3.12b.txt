@@ -1,2 +1,0 @@
-gap> IntersectionForm(K);
-[ [ -1 ] ]

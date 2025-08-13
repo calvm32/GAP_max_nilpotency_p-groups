@@ -1,1 +1,0 @@
-DeclareAttribute( "ErrorProbability", IsNearRing, "mutable" );

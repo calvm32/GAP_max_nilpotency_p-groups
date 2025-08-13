@@ -1,8 +1,0 @@
-## Group: [21, 2]
-## Difference Sets: 1
-## Time:  0:00:00.025
-
-return [
-[ 1, 2, 7, 10, 16 ]
-];
-

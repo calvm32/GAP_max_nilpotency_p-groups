@@ -1,8 +1,0 @@
-#Cyclic group of order 5
-_RWS := rec(
-  isRWS := true,
-  ordering := "shortlex",
-  generatorOrder := [a,A],
-  inverses := [A,a],
-  equations := [[a^5,IdWord]]
-);

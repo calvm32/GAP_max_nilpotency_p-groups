@@ -1,3 +1,0 @@
-gap> G:=AlmostCrystallographicPcpGroup( 4, 50, [ 1, -4, 1, 2 ] );;
-gap> GroupCohomology(G,4);
-[ 0 ]
