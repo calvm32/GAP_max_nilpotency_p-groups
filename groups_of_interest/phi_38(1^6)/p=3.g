@@ -33,7 +33,7 @@ Add(rels, Comm(s4,s3));
 Add(rels, s1^p);
 
 # other generator orders
-Add(rels, s2^p*s4); 
+Add(rels, s2^p); 
 Add(rels, s3^p); 
 Add(rels, s4^p); 
 Add(rels, s5^p);
@@ -43,5 +43,5 @@ G := F / NormalClosure(F, rels);
 
 # inspect
 Print(Size(G), "\n"); # 81
-Print(StructureDescription(G), "\n"); # (C9 x C3) : C3
-Print(IdSmallGroup(G), "\n"); # [ 81, 9 ]
+Print(StructureDescription(G), "\n"); # (C3 x C3 x C3) : C3
+Print(IdSmallGroup(G), "\n"); # [ 81, 7 ]

@@ -33,15 +33,15 @@ Add(rels, Comm(s5,s4));
 Add(rels, s1^p);
 
 # other generator orders
-Add(rels, s2^p*s4); 
-Add(rels, s3^p*s5); 
-Add(rels, s4^p*s6); 
+Add(rels, s2^p); 
+Add(rels, s3^p); 
+Add(rels, s4^p); 
 Add(rels, s5^p);
 Add(rels, s6^p);
 
 G := F / NormalClosure(F, rels);
 
 # inspect
-Print(Size(G), "\n"); # 243
-Print(StructureDescription(G), "\n"); # ((C9 x C3) : C3) : C3
-Print(IdSmallGroup(G), "\n"); # [ 243, 28 ]
+Print(Size(G), "\n"); # 81
+Print(StructureDescription(G), "\n"); # (C3 x C3 x C3) : C3
+Print(IdSmallGroup(G), "\n"); # [ 81, 7 ]

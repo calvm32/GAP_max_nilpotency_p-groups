@@ -33,11 +33,11 @@ Add(rels, Comm(s4,s3));
 Add(rels, s1^p);
 
 # other generator orders
-Add(rels, s2^p*s3); 
-Add(rels, s3^p*s4); 
-Add(rels, s4^p*s5); 
-Add(rels, s5^p*s6);
-Add(rels, s6^p);
+Add(rels, s2^Binomial(2,1)*s3^Binomial(2,2)); 
+Add(rels, s3^Binomial(2,1)*s4^Binomial(2,2)); 
+Add(rels, s4^Binomial(2,1)*s5^Binomial(2,2)); 
+Add(rels, s5^Binomial(2,1)*s6^Binomial(2,2));
+Add(rels, s6^Binomial(2,1));
 
 G := F / NormalClosure(F, rels);
 

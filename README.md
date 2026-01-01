@@ -14,7 +14,7 @@
 
 # Using GAP
 
-1. "**cd gap-4.14.0**"
+1. "**cd gap-4.14.1**"
     - enter the correct directory
 
 2. "**./gap**"

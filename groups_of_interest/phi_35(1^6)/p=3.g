@@ -33,15 +33,15 @@ Add(rels, Comm(s3,s2));
 Add(rels, s1^p);
 
 # other generator orders
-Add(rels, s2^p*s4); 
-Add(rels, s3^p*s5); 
-Add(rels, s4^p*s6); 
-Add(rels, s5^p);
-Add(rels, s6^p);
+Add(rels, s2^Binomial(3,1)*s3^Binomial(3,2)*s4^Binomial(3,3)); 
+Add(rels, s3^Binomial(3,1)*s4^Binomial(3,2)*s5^Binomial(3,3)); 
+Add(rels, s4^Binomial(3,1)*s5^Binomial(3,2)*s6^Binomial(3,3)); 
+Add(rels, s5^Binomial(3,1)*s6^Binomial(3,2));
+Add(rels, s6^Binomial(3,1));
 
 G := F / NormalClosure(F, rels);
 
 # inspect
-Print(Size(G), "\n"); # 243
-Print(StructureDescription(G), "\n"); # (C3 . ((C3 x C3) : C3) = (C3 x C3) . (C3 x C3)) : C3
-Print(IdSmallGroup(G), "\n"); # [ 243, 25 ]
+Print(Size(G), "\n"); # 729
+Print(StructureDescription(G), "\n"); # ((C9 x C9) : C3) : C3
+Print(IdSmallGroup(G), "\n"); # [ 729, 95 ]

@@ -33,7 +33,7 @@ Add(rels, Comm(s4,s3));
 Add(rels, s1^p);
 
 # other generator orders
-Add(rels, s2^p*s6); 
+Add(rels, s2^p); 
 Add(rels, s3^p); 
 Add(rels, s4^p); 
 Add(rels, s5^p);
