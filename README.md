@@ -1,6 +1,6 @@
 # Configuring GAP
 
-1. Find the instructions for your operating system
+1. Find the instructions for your operating system to install GAP
     - view *https://www.gap-system.org/install/*
 
 2. "**./configure && make**"
