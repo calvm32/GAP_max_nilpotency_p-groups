@@ -27,10 +27,10 @@ Add(rels, Comm(s4,s3));
 Add(rels, s1^p);
 
 # other generator orders
-Add(rels, s2^Binomial(2,1)*s3^Binomial(2,2)); 
-Add(rels, s3^Binomial(2,1)*s4^Binomial(2,2)); 
-Add(rels, s4^Binomial(2,1)*s5^Binomial(2,2)); 
-Add(rels, s5^Binomial(2,1));
+Add(rels, (s2^Binomial(2,1)*s3^Binomial(2,2))); 
+Add(rels, (s3^Binomial(2,1)*s4^Binomial(2,2))); 
+Add(rels, (s4^Binomial(2,1)*s5^Binomial(2,2))); 
+Add(rels, (s5^Binomial(2,1)));
 
 G := F / NormalClosure(F, rels);
 
